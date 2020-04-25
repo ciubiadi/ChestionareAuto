@@ -46,6 +46,8 @@ public class MainActivity extends AppCompatActivity {
                 finishLayout.setVisibility(View.VISIBLE);
             }
         }.start();
+
+        btnGo.setEnabled(false);
     }
 
     public void updateTimer( int secondsLeft ) {
