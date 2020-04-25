@@ -16,6 +16,7 @@ import org.json.JSONObject;
 import java.io.IOException;
 import java.io.InputStream;
 import java.util.ArrayList;
+import java.util.Random;
 
 public class MainActivity extends AppCompatActivity {
 
@@ -39,12 +40,16 @@ public class MainActivity extends AppCompatActivity {
 
         layoutGame.setVisibility(View.INVISIBLE);
         btnGo.setVisibility(View.VISIBLE);
+
     }
 
     public void get_json() {
         String json;
 
         try {
+
+            Random rand = new Random();
+            int a = rand.nextInt(7);
 
             InputStream is = getAssets().open("intrebari_raspunsuri2.json");
             int size = is.available();
@@ -54,9 +59,17 @@ public class MainActivity extends AppCompatActivity {
 
             json = new String(buffer, "UTF-8");
 
-            // intrebari_raspunsuri2
-
             JSONArray jsonArray = new JSONArray(json);
+
+            JSONObject obj = jsonArray.getJSONObject(0);
+
+            JSONArray secondArray = obj.getJSONArray("answers").getJSONArray(0);
+
+            // obj.getJSONArray("answers").get(1).toString()
+            Log.i("info", secondArray.get(1).toString());
+
+
+
 /*
                 for(int i = 0; i < jsonArray.length(); i++ )
                 {
@@ -68,16 +81,14 @@ public class MainActivity extends AppCompatActivity {
                 }
 */
                // Toast.makeText(getApplicationContext(), numberlist.toString(), Toast.LENGTH_LONG).show();
-
+/*
             JSONObject obj = jsonArray.getJSONObject(0);
-            numberlist.add(obj.getString("answers"));
+            JSONArray secondArray = obj.getJSONArray("answers");
+      //      numberlist.add(obj.getString("answers"));
+            numberlist.add(obj.get("question").toString());
+            numberlist.add(secondArray.getString(0));
                 Log.i("info", numberlist.toString());
-
-       // intrebari_rapsunsuri3
-         /*   JSONObject jsonObject = new JSONObject(json);
-            JSONArray array = jsonObject.getJSONArray("1");
-            numberlist.add(array.get(0).toString());
-            Log.i("info", numberlist.toString()); */
+*/
 
         } catch (IOException e)
         {
