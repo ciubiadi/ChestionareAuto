@@ -1,0 +1,5 @@
+<resources>
+    <string name="app_name">Chestionare Auto</string>
+    <string name="raspunde_mai_tarziu">Raspunde mai tarziu</string>
+    <string name="play">Play!</string>
+</resources>
