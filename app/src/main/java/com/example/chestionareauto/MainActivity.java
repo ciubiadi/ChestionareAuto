@@ -53,18 +53,31 @@ public class MainActivity extends AppCompatActivity {
             is.close();
 
             json = new String(buffer, "UTF-8");
+
+            // intrebari_raspunsuri2
+
             JSONArray jsonArray = new JSONArray(json);
-
-            for(int i = 0; i < jsonArray.length(); i++ )
-            {
-                JSONObject obj = jsonArray.getJSONObject(i);
-                if (obj.getString("question").equals("2. Which of the following statements about blind spots is true?")) {
-                    numberlist.add(obj.getString("question"));
+/*
+                for(int i = 0; i < jsonArray.length(); i++ )
+                {
+                    JSONObject obj = jsonArray.getJSONObject(i);
+                     if (obj.getString("question").equals("2. Which of the following statements about blind spots is true?")) {
+                        numberlist.add(obj.getString("question"));
+                    }
+                numberlist.add(obj.toString());
                 }
-            }
+*/
+               // Toast.makeText(getApplicationContext(), numberlist.toString(), Toast.LENGTH_LONG).show();
 
-            Toast.makeText(getApplicationContext(), numberlist.toString(), Toast.LENGTH_LONG).show();
+            JSONObject obj = jsonArray.getJSONObject(0);
+            numberlist.add(obj.getString("answers"));
+                Log.i("info", numberlist.toString());
 
+       // intrebari_rapsunsuri3
+         /*   JSONObject jsonObject = new JSONObject(json);
+            JSONArray array = jsonObject.getJSONArray("1");
+            numberlist.add(array.get(0).toString());
+            Log.i("info", numberlist.toString()); */
 
         } catch (IOException e)
         {
