@@ -26,6 +26,7 @@ public class MainActivity extends AppCompatActivity {
     public void start(View view) {
         layoutGame.setVisibility(View.VISIBLE);
         btnGo.setVisibility(View.INVISIBLE);
+        get_json();
     }
 
     @Override
@@ -38,8 +39,6 @@ public class MainActivity extends AppCompatActivity {
 
         layoutGame.setVisibility(View.INVISIBLE);
         btnGo.setVisibility(View.VISIBLE);
-
-        get_json();
     }
 
     public void get_json() {
@@ -50,7 +49,7 @@ public class MainActivity extends AppCompatActivity {
             InputStream is = getAssets().open("intrebari_raspunsuri2.json");
             int size = is.available();
             byte[] buffer = new byte[size];
-            is.read();
+            is.read(buffer);
             is.close();
 
             json = new String(buffer, "UTF-8");
