@@ -4,9 +4,11 @@ import androidx.appcompat.app.AppCompatActivity;
 import androidx.constraintlayout.widget.ConstraintLayout;
 
 import android.os.Bundle;
+import android.os.CountDownTimer;
 import android.util.Log;
 import android.view.View;
 import android.widget.Button;
+import android.widget.TextView;
 import android.widget.Toast;
 
 import org.json.JSONArray;
@@ -21,13 +23,42 @@ import java.util.Random;
 public class MainActivity extends AppCompatActivity {
 
     ConstraintLayout layoutGame;
+    ConstraintLayout finishLayout;
     Button btnGo;
     ArrayList<String> numberlist = new ArrayList<String>();
+    TextView timerTextView;
 
     public void start(View view) {
         layoutGame.setVisibility(View.VISIBLE);
         btnGo.setVisibility(View.INVISIBLE);
         get_json();
+
+        new CountDownTimer(1800100, 1000) {
+
+            @Override
+            public void onTick(long millisUntilFinished) {
+                updateTimer((int) millisUntilFinished / 1000);
+            }
+
+            @Override
+            public void onFinish() {
+                layoutGame.setVisibility(View.INVISIBLE);
+                finishLayout.setVisibility(View.VISIBLE);
+            }
+        }.start();
+    }
+
+    public void updateTimer( int secondsLeft ) {
+        int minutes = secondsLeft / 60;
+        int seconds = secondsLeft - (minutes * 60);
+
+        String secondsString = Integer.toString(seconds);
+
+        if(secondsString.equals("0")) {
+            secondsString = "00";
+        }
+
+        timerTextView.setText(Integer.toString(minutes) + ":" + secondsString);
     }
 
     @Override
@@ -36,9 +67,12 @@ public class MainActivity extends AppCompatActivity {
         setContentView(R.layout.activity_main);
 
         layoutGame = findViewById(R.id.layoutGame);
+        finishLayout = findViewById(R.id.finishLayout);
         btnGo = findViewById(R.id.btnGo);
+        timerTextView = findViewById(R.id.timerTextView);
 
         layoutGame.setVisibility(View.INVISIBLE);
+        finishLayout.setVisibility(View.INVISIBLE);
         btnGo.setVisibility(View.VISIBLE);
 
     }
