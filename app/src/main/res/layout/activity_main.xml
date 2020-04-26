@@ -41,7 +41,6 @@
             android:onClick="chooseAnswer"
             android:tag="0"
             android:text="A) Raspuns 1"
-            android:onClick="onAnswer1Click"
             app:layout_constraintEnd_toEndOf="parent"
             app:layout_constraintHorizontal_bias="1.0"
             app:layout_constraintStart_toStartOf="parent"
@@ -68,28 +67,17 @@
             android:onClick="chooseAnswer"
             android:tag="2"
             android:text="C) Raspuns 3"
-            android:onClick="onAnswer3Click"
             app:layout_constraintEnd_toEndOf="parent"
             app:layout_constraintHorizontal_bias="0.573"
             app:layout_constraintStart_toStartOf="parent"
             app:layout_constraintTop_toBottomOf="@+id/btnB" />
 
-<<<<<<< HEAD
         <ImageView
             android:id="@+id/imageView"
             android:layout_width="0dp"
             android:layout_height="86dp"
             android:layout_marginTop="13dp"
             android:contentDescription="TODO"
-=======
-        <Button
-            android:id="@+id/btnB"
-            android:layout_width="350dp"
-            android:layout_height="wrap_content"
-            android:layout_marginTop="15dp"
-            android:text="B) Raspuns 2"
-            android:onClick="onAnswer2Click"
->>>>>>> 989764c69fe2108a01a87f6eb93ccfdedbe5326e
             app:layout_constraintEnd_toEndOf="parent"
             app:layout_constraintStart_toStartOf="parent"
             app:layout_constraintTop_toBottomOf="@+id/timerTextView"
@@ -127,7 +115,6 @@
 
         <TextView
             android:id="@+id/questionTextView"
-<<<<<<< HEAD
             android:layout_width="0dp"
             android:layout_height="wrap_content"
             android:layout_marginStart="16dp"
@@ -139,19 +126,6 @@
             android:textSize="18sp"
             app:layout_constraintEnd_toEndOf="parent"
             app:layout_constraintHorizontal_bias="0.498"
-=======
-            android:layout_width="340dp"
-            android:layout_height="wrap_content"
-            android:layout_marginStart="29dp"
-            android:layout_marginLeft="29dp"
-            android:layout_marginTop="16dp"
-            android:layout_marginEnd="309dp"
-            android:layout_marginRight="300dp"
-            android:text="1. You are about to make a left turn. You must signal continuously during the last ____ feet before the turn."
-            android:textSize="14sp"
-            app:layout_constraintEnd_toEndOf="parent"
-            app:layout_constraintHorizontal_bias="0.0"
->>>>>>> 989764c69fe2108a01a87f6eb93ccfdedbe5326e
             app:layout_constraintStart_toStartOf="parent"
             app:layout_constraintTop_toBottomOf="@+id/imageView" />
 

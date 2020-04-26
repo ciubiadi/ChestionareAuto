@@ -3,6 +3,7 @@
   <component name="ProjectModuleManager">
     <modules>
       <module fileurl="file://$PROJECT_DIR$/Chestionare Auto.iml" filepath="$PROJECT_DIR$/Chestionare Auto.iml" group="Chestionare Auto" />
+      <module fileurl="file://$PROJECT_DIR$/app/ChestionareAuto-app.iml" filepath="$PROJECT_DIR$/app/ChestionareAuto-app.iml" group="Chestionare Auto/app" />
       <module fileurl="file://$PROJECT_DIR$/app/app.iml" filepath="$PROJECT_DIR$/app/app.iml" group="Chestionare Auto/app" />
     </modules>
   </component>
