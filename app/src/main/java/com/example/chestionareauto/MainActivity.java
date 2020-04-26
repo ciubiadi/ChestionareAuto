@@ -42,9 +42,13 @@ public class MainActivity extends AppCompatActivity {
 
        int tag = Integer.parseInt(view.getTag().toString());
        if(buttonStatus[tag] == 0 ) {
+
+           //Daca butonul nu a mai fost apasat
            view.setBackgroundResource(R.color.light_blue);
            buttonStatus[tag] = 1;
        } else {
+
+           //Daca butonul a mai fost apasat, il "deselectam" si schimbam culoarea de fundal inapoi in gri
            view.setBackgroundResource(R.color.light_gray);
            buttonStatus[tag] = 0;
        }
@@ -54,6 +58,8 @@ public class MainActivity extends AppCompatActivity {
 
         boolean answerStatus = true;
 
+        //Comparam fiecare element din vectorul correctAnswers ( sablonul cu raspunsuri corecte pt intrebarea curenta ) cu fiecare element din buttinStatus ( raspunsurile alese de iutilizator )
+
         for( int i = 0; i < correctAnswers.length; i++)
         {
             if(correctAnswers[i] != buttonStatus[i])
@@ -61,10 +67,10 @@ public class MainActivity extends AppCompatActivity {
         }
         if(answerStatus == true)
         {
-            Log.i("info", "correct");
+            Log.i("info", "Raspuns correct");
             counterCorrectAnswers++;
         }
-        else Log.i("info", "gresit");
+        else Log.i("info", "Raspuns gresit");
     }
 
     public void start(View view) {
@@ -90,6 +96,8 @@ public class MainActivity extends AppCompatActivity {
     }
 
     public void updateTimer( int secondsLeft ) {
+
+        //transformam secundele in minute : secunde
         int minutes = secondsLeft / 60;
         int seconds = secondsLeft - (minutes * 60);
 
@@ -151,6 +159,7 @@ public class MainActivity extends AppCompatActivity {
 
             for( int i = 0; i < 3; i++)
             {
+                // daca in json valoarea raspunsului e false, scriem valoarea 0 in vectorul correctAnswers, daca nu scriem valoarea 1 ( true )
                 if(obj.getJSONArray("answers").getJSONArray(i).get(1).toString() == "false") {
                     correctAnswers[i] = 0;
                 }
