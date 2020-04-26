@@ -2,4 +2,6 @@
     <string name="app_name">Chestionare Auto</string>
     <string name="raspunde_mai_tarziu">Raspunde mai tarziu</string>
     <string name="play">Play!</string>
+    <string name="examenul_s_a_incheiat">Examenul s-a incheiat!</string>
+    <string name="ai_picat_trecut">Ai picat / trecut!</string>
 </resources>
