@@ -18,13 +18,15 @@
             android:layout_height="wrap_content"
             android:layout_marginStart="30dp"
             android:layout_marginLeft="30dp"
+            android:layout_marginTop="16dp"
             android:layout_marginBottom="42dp"
             android:background="@android:color/holo_orange_light"
             android:padding="5sp"
             android:text="@string/raspunde_mai_tarziu"
             android:textColor="#FFFFFF"
             app:layout_constraintBottom_toBottomOf="parent"
-            app:layout_constraintStart_toStartOf="parent" />
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/btnC" />
 
         <Button
             android:id="@+id/btnA"
@@ -32,14 +34,42 @@
             android:layout_height="wrap_content"
             android:layout_marginStart="27dp"
             android:layout_marginLeft="27dp"
-            android:layout_marginTop="97dp"
+            android:layout_marginTop="40dp"
             android:layout_marginEnd="27dp"
             android:layout_marginRight="27dp"
+            android:onClick="chooseAnswer"
+            android:tag="0"
             android:text="A) Raspuns 1"
             app:layout_constraintEnd_toEndOf="parent"
-            app:layout_constraintHorizontal_bias="0.5"
+            app:layout_constraintHorizontal_bias="1.0"
             app:layout_constraintStart_toStartOf="parent"
             app:layout_constraintTop_toBottomOf="@+id/questionTextView" />
+
+        <Button
+            android:id="@+id/btnB"
+            android:layout_width="350dp"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="12dp"
+            android:onClick="chooseAnswer"
+            android:tag="1"
+            android:text="B) Raspuns 2"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.573"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/btnA" />
+
+        <Button
+            android:id="@+id/btnC"
+            android:layout_width="350dp"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="16dp"
+            android:onClick="chooseAnswer"
+            android:tag="2"
+            android:text="C) Raspuns 3"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.573"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/btnB" />
 
         <ImageView
             android:id="@+id/imageView"
@@ -53,40 +83,21 @@
             app:srcCompat="@drawable/ic_launcher_foreground" />
 
         <Button
-            android:id="@+id/btnC"
-            android:layout_width="350dp"
-            android:layout_height="wrap_content"
-            android:layout_marginTop="14dp"
-            android:text="C) Raspuns 3"
-            app:layout_constraintEnd_toEndOf="parent"
-            app:layout_constraintHorizontal_bias="0.5"
-            app:layout_constraintStart_toStartOf="parent"
-            app:layout_constraintTop_toBottomOf="@+id/btnB" />
-
-        <Button
-            android:id="@+id/btnB"
-            android:layout_width="350dp"
-            android:layout_height="wrap_content"
-            android:layout_marginTop="15dp"
-            android:text="B) Raspuns 2"
-            app:layout_constraintEnd_toEndOf="parent"
-            app:layout_constraintHorizontal_bias="0.5"
-            app:layout_constraintStart_toStartOf="parent"
-            app:layout_constraintTop_toBottomOf="@+id/btnA" />
-
-        <Button
             android:id="@+id/btnNext"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
+            android:layout_marginTop="16dp"
             android:layout_marginEnd="26dp"
             android:layout_marginRight="26dp"
             android:layout_marginBottom="42dp"
             android:background="@android:color/holo_green_light"
+            android:onClick="next"
             android:padding="5sp"
             android:text="Trimite Raspuns"
             android:textColor="#000000"
             app:layout_constraintBottom_toBottomOf="parent"
-            app:layout_constraintEnd_toEndOf="parent" />
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/btnC" />
 
         <TextView
             android:id="@+id/answersTextView"
@@ -103,16 +114,17 @@
 
         <TextView
             android:id="@+id/questionTextView"
-            android:layout_width="wrap_content"
+            android:layout_width="0dp"
             android:layout_height="wrap_content"
-            android:layout_marginStart="29dp"
-            android:layout_marginLeft="29dp"
-            android:layout_marginTop="44dp"
-            android:layout_marginEnd="309dp"
-            android:layout_marginRight="309dp"
+            android:layout_marginStart="16dp"
+            android:layout_marginLeft="16dp"
+            android:layout_marginTop="48dp"
+            android:layout_marginEnd="16dp"
+            android:layout_marginRight="16dp"
             android:text="1) Intrebare"
-            android:textSize="14sp"
+            android:textSize="18sp"
             app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.498"
             app:layout_constraintStart_toStartOf="parent"
             app:layout_constraintTop_toBottomOf="@+id/imageView" />
 

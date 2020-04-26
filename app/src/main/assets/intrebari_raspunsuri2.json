@@ -14,7 +14,7 @@
             true
         ]
         ], 
-        "question": "1. You are about to make a left turn. You must signal continuously during the last ____ feet before the turn."
+        "question": "You are about to make a left turn. You must signal continuously during the last ____ feet before the turn."
     }, 
     {
         "answers": [
@@ -31,7 +31,7 @@
             false
         ]
         ], 
-        "question": "2. Which of the following statements about blind spots is true?"
+        "question": "Which of the following statements about blind spots is true?"
     }, 
     {
         "answers": [
@@ -48,7 +48,7 @@
             true
         ]
         ], 
-        "question": "3. You have been involved in a minor traffic collision with a parked vehicle and you can't find the owner. You must:"
+        "question": "You have been involved in a minor traffic collision with a parked vehicle and you can't find the owner. You must:"
     }, 
     {
         "answers": [
@@ -65,7 +65,7 @@
             false
         ]
         ], 
-        "question": "4. Unless otherwise posted the speed limit in a residential area is ____."
+        "question": "Unless otherwise posted the speed limit in a residential area is ____."
     }, 
     {
         "answers": [
@@ -82,7 +82,7 @@
             true
         ]
         ], 
-        "question": "5. You may legally block an intersection:"
+        "question": "You may legally block an intersection:"
     }, 
     {
         "answers": [
@@ -99,6 +99,6 @@
             false
         ]
         ], 
-        "question": "6. When parking uphill on a two-way street with no curb, your front wheels should be:"
+        "question": "When parking uphill on a two-way street with no curb, your front wheels should be:"
     }
 ]

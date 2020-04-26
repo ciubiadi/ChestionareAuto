@@ -3,6 +3,7 @@ package com.example.chestionareauto;
 import androidx.appcompat.app.AppCompatActivity;
 import androidx.constraintlayout.widget.ConstraintLayout;
 
+import android.graphics.Color;
 import android.os.Bundle;
 import android.os.CountDownTimer;
 import android.util.Log;
@@ -25,8 +26,46 @@ public class MainActivity extends AppCompatActivity {
     ConstraintLayout layoutGame;
     ConstraintLayout finishLayout;
     Button btnGo;
-    ArrayList<String> numberlist = new ArrayList<String>();
+    Button btnA;
+    Button btnB;
+    Button btnC;
     TextView timerTextView;
+    TextView questionTextView;
+    Random rand;
+    int questionCoutner = 1;
+    int[] buttonStatus = { 0, 0, 0 };
+   // ArrayList<Integer> correctAnswers = new ArrayList<Integer>();
+    int[] correctAnswers = { 0, 0, 0 };
+    int counterCorrectAnswers = 0;
+
+    public void chooseAnswer(View view) {
+
+       int tag = Integer.parseInt(view.getTag().toString());
+       if(buttonStatus[tag] == 0 ) {
+           view.setBackgroundResource(R.color.light_blue);
+           buttonStatus[tag] = 1;
+       } else {
+           view.setBackgroundResource(R.color.light_gray);
+           buttonStatus[tag] = 0;
+       }
+    }
+
+    public void next(View view) {
+
+        boolean answerStatus = true;
+
+        for( int i = 0; i < correctAnswers.length; i++)
+        {
+            if(correctAnswers[i] != buttonStatus[i])
+                answerStatus = false;
+        }
+        if(answerStatus == true)
+        {
+            Log.i("info", "correct");
+            counterCorrectAnswers++;
+        }
+        else Log.i("info", "gresit");
+    }
 
     public void start(View view) {
         layoutGame.setVisibility(View.VISIBLE);
@@ -56,8 +95,8 @@ public class MainActivity extends AppCompatActivity {
 
         String secondsString = Integer.toString(seconds);
 
-        if(secondsString.equals("0")) {
-            secondsString = "00";
+        if(seconds <= 9) {
+            secondsString = "0" + secondsString;
         }
 
         timerTextView.setText(Integer.toString(minutes) + ":" + secondsString);
@@ -72,6 +111,10 @@ public class MainActivity extends AppCompatActivity {
         finishLayout = findViewById(R.id.finishLayout);
         btnGo = findViewById(R.id.btnGo);
         timerTextView = findViewById(R.id.timerTextView);
+        questionTextView = findViewById(R.id.questionTextView);
+        btnA = findViewById(R.id.btnA);
+        btnB = findViewById(R.id.btnB);
+        btnC = findViewById(R.id.btnC);
 
         layoutGame.setVisibility(View.INVISIBLE);
         finishLayout.setVisibility(View.INVISIBLE);
@@ -84,8 +127,8 @@ public class MainActivity extends AppCompatActivity {
 
         try {
 
-            Random rand = new Random();
-            int a = rand.nextInt(7);
+            rand = new Random();
+            int a = rand.nextInt(6);
 
             InputStream is = getAssets().open("intrebari_raspunsuri2.json");
             int size = is.available();
@@ -97,34 +140,32 @@ public class MainActivity extends AppCompatActivity {
 
             JSONArray jsonArray = new JSONArray(json);
 
-            JSONObject obj = jsonArray.getJSONObject(0);
+            JSONObject obj = jsonArray.getJSONObject(a);
 
             JSONArray secondArray = obj.getJSONArray("answers").getJSONArray(0);
 
             // obj.getJSONArray("answers").get(1).toString()
-            Log.i("info", secondArray.get(1).toString());
+            //   Log.i("info", secondArray.get(0).toString());
 
+            //get questions and answers
 
-
-/*
-                for(int i = 0; i < jsonArray.length(); i++ )
-                {
-                    JSONObject obj = jsonArray.getJSONObject(i);
-                     if (obj.getString("question").equals("2. Which of the following statements about blind spots is true?")) {
-                        numberlist.add(obj.getString("question"));
-                    }
-                numberlist.add(obj.toString());
+            for( int i = 0; i < 3; i++)
+            {
+                if(obj.getJSONArray("answers").getJSONArray(i).get(1).toString() == "false") {
+                    correctAnswers[i] = 0;
                 }
-*/
-               // Toast.makeText(getApplicationContext(), numberlist.toString(), Toast.LENGTH_LONG).show();
-/*
-            JSONObject obj = jsonArray.getJSONObject(0);
-            JSONArray secondArray = obj.getJSONArray("answers");
-      //      numberlist.add(obj.getString("answers"));
-            numberlist.add(obj.get("question").toString());
-            numberlist.add(secondArray.getString(0));
-                Log.i("info", numberlist.toString());
-*/
+                else {
+                    correctAnswers[i] = 1;
+                }
+            }
+
+            questionTextView.setText(Integer.toString(questionCoutner) + ". " + obj.getString("question"));
+
+            btnA.setText("A) " + secondArray.get(0).toString());
+
+            btnB.setText("B) " + obj.getJSONArray("answers").getJSONArray(1).get(0).toString());
+
+            btnC.setText("C) " + obj.getJSONArray("answers").getJSONArray(2).get(0).toString());
 
         } catch (IOException e)
         {
