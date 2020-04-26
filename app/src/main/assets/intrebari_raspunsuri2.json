@@ -1,104 +1,44 @@
 [
     {
-        "answers": [
-        [
-            "50", 
-            false
-        ], 
-        [
-            "75", 
-            false
-        ], 
-        [
-            "100", 
-            true
-        ]
-        ], 
-        "question": "1. You are about to make a left turn. You must signal continuously during the last ____ feet before the turn."
+        "answer1":"50",
+        "answer2":"75",
+        "answer3":"100",
+        "question": "1. You are about to make a left turn. You must signal continuously during the last ____ feet before the turn.",
+        "correctAnswer": "100"
     }, 
     {
-        "answers": [
-        [
-            "They are eliminated if you have one outside mirror on each side of the vehicle.", 
-            false
-        ], 
-        [
-            "Large trucks have bigger blind spots than most passenger vehicles.", 
-            true
-        ], 
-        [
-            "Blind spots can be checked by looking in your rear view mirrors.", 
-            false
-        ]
-        ], 
-        "question": "2. Which of the following statements about blind spots is true?"
+        "answer1": "They are eliminated if you have one outside mirror on each side of the vehicle.",
+        "answer2":"Large trucks have bigger blind spots than most passenger vehicles.",
+        "answer3":"Blind spots can be checked by looking in your rear view mirrors.",
+        "question": "2. Which of the following statements about blind spots is true?",
+        "correctAnswer": "Large trucks have bigger blind spots than most passenger vehicles."
     }, 
     {
-        "answers": [
-        [
-            "Leave a note on the vehicle.", 
-            false
-        ], 
-        [
-            "Report the accident without delay to the city police or, in unincorporated areas, to the CHP.", 
-            false
-        ], 
-        [
-            "Both of the above.", 
-            true
-        ]
-        ], 
-        "question": "3. You have been involved in a minor traffic collision with a parked vehicle and you can't find the owner. You must:"
+        "answer1":"Leave a note on the vehicle.",
+        "answer2":"Report the accident without delay to the city police or, in unincorporated areas, to the CHP.",
+        "answer3":"Both of the above.",
+        "question": "3. You have been involved in a minor traffic collision with a parked vehicle and you can't find the owner. You must:",
+        "correctAnswer": "Both of the above."
     }, 
     {
-        "answers": [
-        [
-            "20 mph", 
-            false
-        ], 
-        [
-            "25 mph", 
-            true
-        ], 
-        [
-            "30 mph", 
-            false
-        ]
-        ], 
-        "question": "4. Unless otherwise posted the speed limit in a residential area is ____."
+        "answer1": "20 mph",
+        "answer2":"25 mph",
+        "answer3":"30 mph",
+        "question": "4. Unless otherwise posted the speed limit in a residential area is ____.",
+        "correctAnswer": "25 mph"
     }, 
     {
-        "answers": [
-        [
-            "When you entered the intersection on the green light.", 
-            false
-        ], 
-        [
-            "During rush hour traffic.", 
-            false
-        ], 
-        [
-            "Under no circumstances.", 
-            true
-        ]
-        ], 
-        "question": "5. You may legally block an intersection:"
+        "answer1":"When you entered the intersection on the green light.",
+        "answer2":"During rush hour traffic.",
+        "answer3":"Under no circumstances.",
+        "question": "5. You may legally block an intersection:",
+        "correctAnswer": "Under no circumstances."
     }, 
     {
-        "answers": [
-        [
-            "Turned to the left (toward the street).", 
-            false
-        ], 
-        [
-            "Turned to the right (away from the street).", 
-            true
-        ], 
-        [
-            "Parallel with the pavement.", 
-            false
-        ]
-        ], 
-        "question": "6. When parking uphill on a two-way street with no curb, your front wheels should be:"
+        "answer1":"Turned to the left (toward the street).",
+        "answer2":"Turned to the right (away from the street).",
+        "answer3":"Parallel with the pavement.",
+        "question": "6. When parking uphill on a two-way street with no curb, your front wheels should be:",
+        "correctAnswer": "Turned to the right (away from the street)."
     }
 ]

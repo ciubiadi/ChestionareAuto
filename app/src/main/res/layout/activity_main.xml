@@ -49,6 +49,7 @@
 
         <Button
             android:id="@+id/btnA"
+            style="@style/Widget.AppCompat.Button"
             android:layout_width="350dp"
             android:layout_height="wrap_content"
             android:layout_marginStart="27dp"
@@ -57,6 +58,7 @@
             android:layout_marginEnd="27dp"
             android:layout_marginRight="27dp"
             android:text="A) Raspuns 1"
+            android:onClick="onAnswer1Click"
             app:layout_constraintEnd_toEndOf="parent"
             app:layout_constraintHorizontal_bias="0.5"
             app:layout_constraintStart_toStartOf="parent"
@@ -79,6 +81,7 @@
             android:layout_height="wrap_content"
             android:layout_marginTop="14dp"
             android:text="C) Raspuns 3"
+            android:onClick="onAnswer3Click"
             app:layout_constraintEnd_toEndOf="parent"
             app:layout_constraintHorizontal_bias="0.5"
             app:layout_constraintStart_toStartOf="parent"
@@ -90,6 +93,7 @@
             android:layout_height="wrap_content"
             android:layout_marginTop="15dp"
             android:text="B) Raspuns 2"
+            android:onClick="onAnswer2Click"
             app:layout_constraintEnd_toEndOf="parent"
             app:layout_constraintHorizontal_bias="0.5"
             app:layout_constraintStart_toStartOf="parent"
@@ -124,16 +128,17 @@
 
         <TextView
             android:id="@+id/questionTextView"
-            android:layout_width="wrap_content"
+            android:layout_width="340dp"
             android:layout_height="wrap_content"
             android:layout_marginStart="29dp"
             android:layout_marginLeft="29dp"
-            android:layout_marginTop="44dp"
+            android:layout_marginTop="16dp"
             android:layout_marginEnd="309dp"
-            android:layout_marginRight="309dp"
-            android:text="1) Intrebare"
+            android:layout_marginRight="300dp"
+            android:text="1. You are about to make a left turn. You must signal continuously during the last ____ feet before the turn."
             android:textSize="14sp"
             app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.0"
             app:layout_constraintStart_toStartOf="parent"
             app:layout_constraintTop_toBottomOf="@+id/imageView" />
 
