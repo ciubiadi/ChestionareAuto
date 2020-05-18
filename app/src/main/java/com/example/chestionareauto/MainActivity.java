@@ -30,6 +30,7 @@ public class MainActivity extends AppCompatActivity {
     Button btnA;
     Button btnB;
     Button btnC;
+    Button btnNext;
     TextView timerTextView;
     TextView questionTextView;
     TextView answersTextView;
@@ -40,6 +41,7 @@ public class MainActivity extends AppCompatActivity {
    // ArrayList<Integer> correctAnswers = new ArrayList<Integer>();
     int[] correctAnswers = { 0, 0, 0 };
     int counterCorrectAnswers = 0;
+    boolean isSendAnswerEnabled = true;
     ArrayList<Integer> arrayOfQuestions = new ArrayList<>();
 
     JSONArray jsonArray;
@@ -59,6 +61,7 @@ public class MainActivity extends AppCompatActivity {
            view.setBackgroundResource(R.color.light_gray);
            buttonStatus[tag] = 0;
        }
+        isSendAnswerButtonEnabled();
     }
 
     public void next(View view) throws JSONException {
@@ -84,6 +87,7 @@ public class MainActivity extends AppCompatActivity {
         getQuestion();
         resetAnswersButtonState();
         answersTextView.setText(Integer.toString(questionCounter) + "/26 ");
+        isSendAnswerButtonEnabled();
     }
 
     public void start(View view) throws JSONException {
@@ -91,6 +95,7 @@ public class MainActivity extends AppCompatActivity {
         btnGo.setVisibility(View.INVISIBLE);
         get_json();
         getQuestion();
+        isSendAnswerButtonEnabled();
 
         new CountDownTimer(1800100, 1000) {
 
@@ -139,6 +144,7 @@ public class MainActivity extends AppCompatActivity {
         btnA = findViewById(R.id.btnA);
         btnB = findViewById(R.id.btnB);
         btnC = findViewById(R.id.btnC);
+        btnNext = findViewById(R.id.btnNext);
 
         layoutGame.setVisibility(View.INVISIBLE);
         finishLayout.setVisibility(View.INVISIBLE);
@@ -213,6 +219,16 @@ public class MainActivity extends AppCompatActivity {
         buttonStatus[0] = 0; buttonStatus[1] = 0; buttonStatus[2] = 0;
 
         Log.i("info", String.valueOf(counterCorrectAnswers));
+    }
+
+    public void isSendAnswerButtonEnabled() {
+        if (buttonStatus[0] == 0 && buttonStatus[1] == 0 && buttonStatus[2] == 0) {
+            btnNext.setEnabled(false);
+            btnNext.setBackgroundResource(R.color.light_gray);
+        } else {
+            btnNext.setEnabled(true);
+            btnNext.setBackgroundResource(R.color.light_green);
+        }
     }
 
 }
