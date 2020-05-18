@@ -32,12 +32,18 @@ public class MainActivity extends AppCompatActivity {
     Button btnC;
     TextView timerTextView;
     TextView questionTextView;
+    TextView answersTextView;
     Random rand;
-    int questionCoutner = 1;
+    int questionCounter = 1;
+//    int answeredQuestionsCounter = 0;
     int[] buttonStatus = { 0, 0, 0 };
    // ArrayList<Integer> correctAnswers = new ArrayList<Integer>();
     int[] correctAnswers = { 0, 0, 0 };
     int counterCorrectAnswers = 0;
+    ArrayList<Integer> arrayOfQuestions = new ArrayList<>();
+
+    JSONArray jsonArray;
+    JSONObject obj;
 
     public void chooseAnswer(View view) {
 
@@ -55,7 +61,7 @@ public class MainActivity extends AppCompatActivity {
        }
     }
 
-    public void next(View view) {
+    public void next(View view) throws JSONException {
 
         boolean answerStatus = true;
 
@@ -72,12 +78,19 @@ public class MainActivity extends AppCompatActivity {
             counterCorrectAnswers++;
         }
         else Log.i("info", "Raspuns gresit");
+
+//        answeredQuestionsCounter++;
+        questionCounter++;
+        getQuestion();
+        resetAnswersButtonState();
+        answersTextView.setText(Integer.toString(questionCounter) + "/26 ");
     }
 
-    public void start(View view) {
+    public void start(View view) throws JSONException {
         layoutGame.setVisibility(View.VISIBLE);
         btnGo.setVisibility(View.INVISIBLE);
         get_json();
+        getQuestion();
 
         new CountDownTimer(1800100, 1000) {
 
@@ -122,6 +135,7 @@ public class MainActivity extends AppCompatActivity {
         btnGo = findViewById(R.id.btnGo);
         timerTextView = findViewById(R.id.timerTextView);
         questionTextView = findViewById(R.id.questionTextView);
+        answersTextView = findViewById(R.id.answersTextView);
         btnA = findViewById(R.id.btnA);
         btnB = findViewById(R.id.btnB);
         btnC = findViewById(R.id.btnC);
@@ -147,37 +161,7 @@ public class MainActivity extends AppCompatActivity {
             is.close();
             json = new String(buffer, "UTF-8");
 
-            JSONArray jsonArray = new JSONArray(json);
-
-            JSONObject obj = jsonArray.getJSONObject(a);
-
-            JSONArray secondArray = obj.getJSONArray("answers").getJSONArray(0);
-
-            // obj.getJSONArray("answers").get(1).toString()
-            //   Log.i("info", secondArray.get(0).toString());
-
-            //get questions and answers
-
-            for( int i = 0; i < 3; i++)
-            {
-                // daca in json valoarea raspunsului e false, scriem valoarea 0 in vectorul correctAnswers, daca nu scriem valoarea 1 ( true )
-                if(obj.getJSONArray("answers").getJSONArray(i).get(1).toString() == "false") {
-                    correctAnswers[i] = 0;
             jsonArray = new JSONArray(json);
-                }
-                else {
-                    correctAnswers[i] = 1;
-                }
-            }
-
-            questionTextView.setText(Integer.toString(questionCoutner) + ". " + obj.getString("question"));
-
-            btnA.setText("A) " + secondArray.get(0).toString());
-
-            btnB.setText("B) " + obj.getJSONArray("answers").getJSONArray(1).get(0).toString());
-
-            btnC.setText("C) " + obj.getJSONArray("answers").getJSONArray(2).get(0).toString());
-
         } catch (IOException e)
         {
             e.printStackTrace();
@@ -185,6 +169,50 @@ public class MainActivity extends AppCompatActivity {
         {
             e.printStackTrace();
         }
+    }
+
+    public void getQuestion() throws JSONException {
+        int randomNumber = -1;
+
+        randomNumber = rand.nextInt(6);
+        while (arrayOfQuestions.contains(randomNumber)) {
+            randomNumber = rand.nextInt(6);
+        }
+
+        arrayOfQuestions.add(randomNumber);
+        obj = jsonArray.getJSONObject(randomNumber);
+
+        for( int i = 0; i < 3; i++)
+        {
+            // daca in json valoarea raspunsului e false, scriem valoarea 0 in vectorul correctAnswers, daca nu scriem valoarea 1 ( true )
+            if(obj.getJSONArray("answers").getJSONArray(i).get(1).toString() == "false") {
+                correctAnswers[i] = 0;
+//                    jsonArray = new JSONArray(json);
+            }
+            else {
+                correctAnswers[i] = 1;
+            }
+        }
+
+        questionTextView.setText(Integer.toString(questionCounter) + ". " + obj.getString("question"));
+
+        btnA.setText("A) " + obj.getJSONArray("answers").getJSONArray(0).get(0).toString());
+
+        btnB.setText("B) " + obj.getJSONArray("answers").getJSONArray(1).get(0).toString());
+
+        btnC.setText("C) " + obj.getJSONArray("answers").getJSONArray(2).get(0).toString());
+
+        Log.i("info", obj.toString());
+    }
+
+    public void resetAnswersButtonState() {
+        btnA.setBackgroundResource(R.color.light_gray);
+        btnB.setBackgroundResource(R.color.light_gray);
+        btnC.setBackgroundResource(R.color.light_gray);
+
+        buttonStatus[0] = 0; buttonStatus[1] = 0; buttonStatus[2] = 0;
+
+        Log.i("info", String.valueOf(counterCorrectAnswers));
     }
 
 }
