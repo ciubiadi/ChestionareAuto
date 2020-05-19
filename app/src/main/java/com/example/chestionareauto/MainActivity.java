@@ -34,6 +34,7 @@ public class MainActivity extends AppCompatActivity {
     TextView timerTextView;
     TextView questionTextView;
     TextView answersTextView;
+    TextView resultTextView;
     Random rand;
     int questionCounter = 1;
 //    int answeredQuestionsCounter = 0;
@@ -84,6 +85,19 @@ public class MainActivity extends AppCompatActivity {
 
 //        answeredQuestionsCounter++;
         questionCounter++;
+        Log.i("info", "Raspunsuri date: " + questionCounter);
+        Log.i("info", "Raspunsuri corecte: " + counterCorrectAnswers);
+
+        if (questionCounter == 27) {
+            layoutGame.setVisibility(View.INVISIBLE);
+            finishLayout.setVisibility(View.VISIBLE);
+            if (counterCorrectAnswers > 22) {
+                resultTextView.setText("Ai raspuns corect la " + counterCorrectAnswers + " intrebari. Felicitari, ai trecut!");
+            } else {
+                resultTextView.setText("Ai raspuns corect la " + counterCorrectAnswers + " intrebari. Din pacate, nu ai trecut. Mai incearca!");
+            }
+            return;
+        }
         getQuestion();
         resetAnswersButtonState();
         answersTextView.setText(Integer.toString(questionCounter) + "/26 ");
@@ -141,6 +155,7 @@ public class MainActivity extends AppCompatActivity {
         timerTextView = findViewById(R.id.timerTextView);
         questionTextView = findViewById(R.id.questionTextView);
         answersTextView = findViewById(R.id.answersTextView);
+        resultTextView = findViewById(R.id.rezultatTextView);
         btnA = findViewById(R.id.btnA);
         btnB = findViewById(R.id.btnB);
         btnC = findViewById(R.id.btnC);
@@ -182,7 +197,7 @@ public class MainActivity extends AppCompatActivity {
 
         randomNumber = rand.nextInt(6);
         while (arrayOfQuestions.contains(randomNumber)) {
-            randomNumber = rand.nextInt(6);
+            randomNumber = rand.nextInt(26);
         }
 
         arrayOfQuestions.add(randomNumber);
@@ -217,8 +232,6 @@ public class MainActivity extends AppCompatActivity {
         btnC.setBackgroundResource(R.color.light_gray);
 
         buttonStatus[0] = 0; buttonStatus[1] = 0; buttonStatus[2] = 0;
-
-        Log.i("info", String.valueOf(counterCorrectAnswers));
     }
 
     public void isSendAnswerButtonEnabled() {
@@ -229,6 +242,11 @@ public class MainActivity extends AppCompatActivity {
             btnNext.setEnabled(true);
             btnNext.setBackgroundResource(R.color.light_green);
         }
+    }
+
+    public void answerLater(View view) throws JSONException {
+        arrayOfQuestions.remove(arrayOfQuestions.size() - 1);
+        getQuestion();
     }
 
 }

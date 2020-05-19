@@ -100,5 +100,363 @@
         ]
         ], 
         "question": "When parking uphill on a two-way street with no curb, your front wheels should be:"
+    },
+    {
+        "answers": [
+            [
+                "On bridges and under bridges.",
+                true
+            ],
+            [
+                "On national roads.",
+                false
+            ],
+            [
+                "Less than 50 m from the entrance at the premises of the institutions.",
+                false
+            ]
+        ],
+        "question": "The return is prohibited:"
+    },
+    {
+        "answers": [
+            [
+                "Distance from the vehicle moving behind you.",
+                false
+            ],
+            [
+                "Distance from the place where the execution of the coping manoeuvre ends.",
+                false
+            ],
+            [
+                "The distance between the place where the intention to overcome and the place where the maneuver begins is signaled.",
+                true
+            ]
+        ],
+        "question": "What is the distance of 50 m needed to signal the change of direction of travel in localities?"
+    },
+    {
+        "answers": [
+            [
+                "To the issuing unit.",
+                true
+            ],
+            [
+                "The police that you belong to the residence.",
+                false
+            ],
+            [
+                "To the nearest police station.",
+                false
+            ]
+        ],
+        "question": "Where you must declare the loss, theft or destruction of the driving licence?"
+    },
+    {
+        "answers": [
+            [
+                "The speed of travel is higher.",
+                true
+            ],
+            [
+                "The dimensions of the windscreen and the rear window are smaller.",
+                false
+            ],
+            [
+                "The road signs are small.",
+                false
+            ]
+        ],
+        "question": "The driver's field of vision shall be reduced when:"
+    },
+    {
+        "answers": [
+            [
+                "Yes.",
+                false
+            ],
+            [
+                "No.",
+                true
+            ],
+            [
+                "This is not legally established.",
+                false
+            ]
+        ],
+        "question": "Is it permitted to hold, mount or use in motor vehicles the systems that disrupt the proper functioning of traffic surveillance devices?"
+    },
+    {
+        "answers": [
+            [
+                "At the decision of the traffic agent.",
+                false
+            ],
+            [
+                "Upon expiry of the suspension period, if the test of knowledge verification has been passed, in the situations stipulated by the law.",
+                true
+            ],
+            [
+                "When the offense report was canceled by a final court order.",
+                false
+            ]
+        ],
+        "question": "When is the drivers license returned after being retained by the police for the purpose of suspending the exercise of the right to drive?"
+    },
+    {
+        "answers": [
+            [
+                "In the intersections.",
+                true
+            ],
+            [
+                "In car parks.",
+                false
+            ],
+            [
+                "In car polygons.",
+                false
+            ]
+        ],
+        "question": "In which places does the speeding often lead to accidents?"
+    },
+    {
+        "answers": [
+            [
+                "Improvised splints.",
+                false
+            ],
+            [
+                "A simple scarf.",
+                true
+            ],
+            [
+                "In this case there is no intervention.",
+                false
+            ]
+        ],
+        "question": "What do you need to use for immobilizing fractures from the upper limbs?"
+    },
+    {
+        "answers": [
+            [
+                "10 km/h.",
+                false
+            ],
+            [
+                "20 km/h.",
+                true
+            ],
+            [
+                "25 km/h.",
+                false
+            ]
+        ],
+        "question": "The vehicle driver who has less than one year of driving practice, will circulate with a maximum permissible speed outside the localities, lower by:"
+    },
+    {
+        "answers": [
+            [
+                "10 seconds after the start of the manoeuvre.",
+                false
+            ],
+            [
+                "During the entire duration of the manoeuvre execution.",
+                true
+            ],
+            [
+                "The law provides nothing on this issue.",
+                false
+            ]
+        ],
+        "question": "How long should i maintain the signal for changing the direction?"
+    },
+    {
+        "answers": [
+            [
+                "Yes, if the position or stationary lights are on.",
+                true
+            ],
+            [
+                "Yes, but only inside the localities.",
+                false
+            ],
+            [
+                "No.",
+                false
+            ]
+        ],
+        "question": "If a public road is unilluminated, is it allowed to station vehicles on the roadway?"
+    },
+    {
+        "answers": [
+            [
+                "To use words.",
+                false
+            ],
+            [
+                "To not make obscene acts or gestures.",
+                false
+            ],
+            [
+                "To address the other participants in traffic offensive or vulgar expressions.",
+                true
+            ]
+        ],
+        "question": "Drivers of vehicles are prohibited:"
+    },
+    {
+        "answers": [
+            [
+                "Vehicles circulating on the communal road.",
+                true
+            ],
+            [
+                "Vehicles circulating on the local road.",
+                false
+            ],
+            [
+                "Vehicles coming from the right.",
+                false
+            ]
+        ],
+        "question": "At the unrouted crossroad between a communal road and a local one, the priority of the crossing is given:"
+    },
+    {
+        "answers": [
+            [
+                "To stop bleeding.",
+                true
+            ],
+            [
+                "To prevent soiling of clothes.",
+                false
+            ],
+            [
+                "To cover the unpleasant appearance of the wound.",
+                false
+            ]
+        ],
+        "question": "A function of the bandage is:"
+    },
+    {
+        "answers": [
+            [
+                "At a distance of less than 50 m from the bus, trolley or tram station.",
+                false
+            ],
+            [
+                "In the ramp, where the visibility is below 50 m.",
+                true
+            ],
+            [
+                "On the streets where the circulation runs both ways.",
+                false
+            ]
+        ],
+        "question": "Turning aound a motor vehicle is prohibited:"
+    },
+    {
+        "answers": [
+            [
+                "Priorirty of the vehicle with a higher speed regime.",
+                false
+            ],
+            [
+                "Priority of the main road.",
+                false
+            ],
+            [
+                "Right priority",
+                true
+            ]
+        ],
+        "question": "What rule of priority applies in an unrouted intersection outside the locality?"
+    },
+    {
+        "answers": [
+            [
+                "When the vehicle to be exceeded runs with the speed allowed by the law.",
+                false
+            ],
+            [
+                "In any places and situations where visibility does not allow the execution of manoeuvre.",
+                true
+            ],
+            [
+                "When road traffic is crowded.",
+                false
+            ]
+        ],
+        "question": "Coping is not allowed"
+    },
+    {
+        "answers": [
+            [
+                "On the roads with less than two lanes on the meaning of driving.",
+                false
+            ],
+            [
+                "In the action area of the two-way circulation indicator.",
+                false
+            ],
+            [
+                "Next to the access ways that serve properties adjacent to public roads.",
+                true
+            ]
+        ],
+        "question": "Voluntary stationing is prohibited:"
+    },
+    {
+        "answers": [
+            [
+                "Yes, with the condition of leaving the vehicle at the scene of the accident.",
+                false
+            ],
+            [
+                "Yes, if the victim was transported to the hospital.",
+                false
+            ],
+            [
+                "Not without the approval of the police.",
+                true
+            ]
+        ],
+        "question": "Is it allowed that a driver, engaged in a traffic accident that resulted in death or hitting a person, to leave the scene?"
+    },
+    {
+        "answers": [
+            [
+                "Increasing fuel consumption.",
+                true
+            ],
+            [
+                "Reducing fuel consumption.",
+                false
+            ],
+            [
+                "A strong decrease in comfort.",
+                false
+            ]
+        ],
+        "question": "The use of the air conditioning system has the effect:"
+    },
+    {
+        "answers": [
+            [
+                "To stop at the last door.",
+                false
+            ],
+            [
+                "To stop behind it and to resume your journey only after the tram doors have been closed.",
+                true
+            ],
+            [
+                "To stop at a distance of 25 m from the tram.",
+                false
+            ]
+        ],
+        "question": "What should you do when you arrive behind a streetcar stopped in a station without refuge for pedestrians?"
     }
+
 ]
