@@ -33,6 +33,10 @@ public class MainActivity extends AppCompatActivity {
     Button btnNext;
     Button btnNextQuestion;
     Button btnAnswerLater;
+    Button btnSemnaleLuminoase;
+    Button btnDepasirea;
+    Button btnVitezaDistanta;
+    Button btnCirculatiaAutostrazi;
     TextView timerTextView;
     TextView questionTextView;
     TextView answersTextView;
@@ -90,12 +94,16 @@ public class MainActivity extends AppCompatActivity {
         layoutGame.setVisibility(View.VISIBLE);
         btnGo.setVisibility(View.INVISIBLE);
         btnNextQuestion.setVisibility(View.INVISIBLE);
+        btnSemnaleLuminoase.setVisibility(View.INVISIBLE);
+        btnDepasirea.setVisibility(View.INVISIBLE);
+        btnVitezaDistanta.setVisibility(View.INVISIBLE);
+        btnCirculatiaAutostrazi.setVisibility(View.INVISIBLE);
 
-        getQuestion();
-        isSendAnswerButtonEnabled();
 
         int tagjsoon = Integer.parseInt(view.getTag().toString());
         get_json(tagjsoon);
+        getQuestion();
+        isSendAnswerButtonEnabled();
 
         new CountDownTimer(1800100, 1000) {
 
@@ -148,6 +156,10 @@ public class MainActivity extends AppCompatActivity {
         btnNext = findViewById(R.id.btnNext);
         btnNextQuestion = findViewById(R.id.buttonNextQuestion);
         btnAnswerLater = findViewById(R.id.btnAnswerLater);
+        btnSemnaleLuminoase = findViewById(R.id.btnSemnaleLuminoase);
+        btnDepasirea = findViewById(R.id.btnDepasirea);
+        btnVitezaDistanta = findViewById(R.id.btnVitezaDistanta);
+        btnCirculatiaAutostrazi = findViewById(R.id.btnCirculatiaAutostrazi);
 
         layoutGame.setVisibility(View.INVISIBLE);
         finishLayout.setVisibility(View.INVISIBLE);

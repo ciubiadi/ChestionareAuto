@@ -31,7 +31,7 @@
         false
       ]
     ],
-    "question": "Conducătorul de autovehicul poate efectua depăşirea pe partea dreaptă a autovehiculului al cărui conducător a semnalizat intenţia schimbării direcţiei de mers spre stânga?"
+    "question": "Conducătorul poate efectua depăşirea pe partea dreaptă a autovehiculului al cărui conducător a semnalizat stanga?"
   },
   {
     "answers": [
@@ -87,19 +87,19 @@
   {
     "answers": [
       [
-        "Teste obligat să respecte semnificaţia semnalelor luminoase ale acestuia, dacă un alt semafor instalat la intrarea în intersecţie are în funcţiune un semnal similar.",
+        "intersecţiile nedirijate;",
         false
       ],
       [
-        "este obligat să respecte semnificaţia semnalelor luminoase, doar dacă semaforul este însoţit de un semn adiţional care indică direcţiile cărora li se adresează semnalele;",
+        "trecerile de pietoni izolate;",
+        false
+      ],
+      [
+        "avariile sistemului de semafoare dintr-o intersecţie.",
         true
-      ],
-      [
-        "nu este obligat să respecte semnificaţia semnalelor luminoase, deoarece nu i se adresează;",
-        false
       ]
     ],
-    "question": "Dacă semaforul în funcţiune se află instalat de cealaltă parte a intersecţiei, conducătorul de autovehicul:"
+    "question": "Semaforul de avertizare constituit dintr-un corp de iluminat de culoare galbenă intermitentă vă informează în legătură cu:"
   },
   {
     "answers": [
