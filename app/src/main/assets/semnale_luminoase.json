@@ -1,0 +1,462 @@
+[
+  {
+    "answers": [
+      [
+        "claxonaţi şi vă angajaţi pe partea dreaptă, direct în faţa vehiculului depăşit.",
+        false
+      ],
+      [
+        " după reîncadrare, semnalizaţi cu luminile de avarie;",
+        false
+      ],
+      [
+        "semnalizaţi revenirea şi efectuaţi manevra în condiţii de siguranţă;",
+        true
+      ]
+    ],
+    "question": "Cum trebuie să procedaţi atunci când intenţionaţi să finalizaţi o depăşire?"
+  },
+  {
+    "answers": [
+      [
+        "nu.",
+        false
+      ],
+      [
+        "da, dacă s-a creat spaţiu suficient pentru această manevră;",
+        true
+      ],
+      [
+        "da, dacă vehiculul din faţă s-a angajat corespunzător părăsirii sensului de mers;",
+        false
+      ]
+    ],
+    "question": "Conducătorul de autovehicul poate efectua depăşirea pe partea dreaptă a autovehiculului al cărui conducător a semnalizat intenţia schimbării direcţiei de mers spre stânga?"
+  },
+  {
+    "answers": [
+      [
+        "vehiculelor care circulă pe drumul naţional.",
+        false
+      ],
+      [
+        "vehiculelor care vin din dreapta;",
+        false
+      ],
+      [
+        "vehiculelor care circulă pe drumul judeţean, comunal sau local;",
+        true
+      ]
+    ],
+    "question": "La intersecţia nedirijată dintre un drum naţional şi unul judeţean, comunal sau local, prioritatea de trecere se acordă:"
+  },
+  {
+    "answers": [
+      [
+        "atunci când pleacă vehiculele aflate de cealaltă parte a căii ferate.",
+        false
+      ],
+      [
+        "după ce a trecut ultimul vagon;",
+        true
+      ],
+      [
+        "după ce s-a stins lumina roşie intermitentă;",
+        false
+      ]
+    ],
+    "question": "Când este permisă trecerea la nivel cu o cale ferată fără bariere, prevăzută cu semnalizare luminoasă, dacă tocmai a trecut un tren?"
+  },
+  {
+    "answers": [
+      [
+        "lucrătorii ce îşi desfăşoară activitatea în cadrul Administraţiei Drumurilor.",
+        false
+      ],
+      [
+        "personalul autorizat din cadrul Ministerului Transporturilor;",
+        false
+      ],
+      [
+        "membrii patrulelor şcolare de circulaţie, de la trecerile pentru pietoni din apropierea unităţilor de învăţământ;",
+        true
+      ]
+    ],
+    "question": "Aveţi obligaţia de a opri imediat autovehiculul la semnalele adresate de:"
+  },
+  {
+    "answers": [
+      [
+        "Teste obligat să respecte semnificaţia semnalelor luminoase ale acestuia, dacă un alt semafor instalat la intrarea în intersecţie are în funcţiune un semnal similar.",
+        false
+      ],
+      [
+        "este obligat să respecte semnificaţia semnalelor luminoase, doar dacă semaforul este însoţit de un semn adiţional care indică direcţiile cărora li se adresează semnalele;",
+        true
+      ],
+      [
+        "nu este obligat să respecte semnificaţia semnalelor luminoase, deoarece nu i se adresează;",
+        false
+      ]
+    ],
+    "question": "Dacă semaforul în funcţiune se află instalat de cealaltă parte a intersecţiei, conducătorul de autovehicul:"
+  },
+  {
+    "answers": [
+      [
+        "atunci când traficul rutier este aglomerat.",
+        true
+      ],
+      [
+        "în orice locuri şi situaţii în care vizibilitatea nu permite executarea manevrei;",
+        false
+      ],
+      [
+        "atunci când vehiculul ce urmează a fi depăşit rulează cu viteza admisă de lege;",
+        false
+      ]
+    ],
+    "question": "Depăşirea nu este permisă:"
+  },
+  {
+    "answers": [
+      [
+        "în zona de acţiune a indicatorului „Staţionarea interzisă“.",
+        false
+      ],
+      [
+        "în intersecţiile unde este necesară manevrarea înainte şi înapoi;",
+        false
+      ],
+      [
+        "unde marcajul axial este discontinuu;",
+        true
+      ]
+    ],
+    "question": " Întoarcerea autovehiculului este interzisă:"
+  },
+  {
+    "answers": [
+      [
+        "tuturor vehiculelor cu care vă intersectaţi.",
+        true
+      ],
+      [
+        "pietonilor de pe sensul opus de circulaţie;",
+        false
+      ],
+      [
+        "autovehiculelor;",
+        false
+      ]
+    ],
+    "question": "La ieşirea din zonele rezidenţiale sau pietonale, sunteţi obligat să acordaţi prioritate:"
+  },
+  {
+    "answers": [
+      [
+        "în dreptul căilor de acces care deservesc proprietăţile alăturate drumurilor publice;",
+        true
+      ],
+      [
+        "în zona aglomerată a pieţelor;",
+        false
+      ],
+      [
+        "în pante şi în rampe.",
+        true
+      ]
+    ],
+    "question": "Precizaţi în care dintre situaţii este interzisă staţionarea voluntară a vehiculelor?"
+  },
+  {
+    "answers": [
+      [
+        "încercarea prototipurilor de şasiuri şi de vehicule cu motor.",
+        false
+      ],
+      [
+        "învăţarea conducerii unui vehicul;",
+        true
+      ],
+      [
+        "oprirea şi efectuarea unei pene de cauciuc;",
+        true
+      ]
+    ],
+    "question": "Ce manevre sunt interzise pe autostradă?"
+  },
+  {
+    "answers": [
+      [
+        "când motorul emite noxe poluante peste limitele legale admise.",
+        false
+      ],
+      [
+        "dacă zgomotul în mers sau staţionare depăşeşte limita legală admisă;",
+        true
+      ],
+      [
+        "când inspecţia tehnică periodică a expirat;",
+        false
+      ]
+    ],
+    "question": "În care dintre situaţii se reţine certificatul de înmatriculare sau înregistrare?"
+  },
+  {
+    "answers": [
+      [
+        "da, dacă în afara luminilor de poziţie, prezenţa autovehiculului este semnalizată şi cu ajutorul triunghiurilor reflectorizante.",
+        true
+      ],
+      [
+        "nu, întrucât în toate cazurile se interzice pe timpul nopţii staţionarea pe partea carosabilă;",
+        false
+      ],
+      [
+        " da, dacă se aprind luminile de poziţie sau de staţionare;",
+        false
+      ]
+    ],
+    "question": "Este permisă staţionarea autovehiculelor pe timpul nopţii pe partea carosabilă a unui drum comunal neiluminat?"
+  },
+  {
+    "answers": [
+      [
+        "un concept valabil pentru conducătorii auto începători;",
+        false
+      ],
+      [
+        "comportamentul rutier care asigură prevenirea accidentelor, prin anticiparea şi evitarea acţiunilor incorecte ale partenerilor de drum, precum şi adaptarea vitezei de deplasare la condiţiile meteo-rutiere specifice;",
+        true
+      ],
+      [
+        "calitatea unor conducători auto de a circula prudent, cu viteză redusă, pentru a nu crea neplăceri în trafic celorlalţi utilizatori ai drumului public.",
+        false
+      ]
+    ],
+    "question": "Ce se înţelege prin conduită preventivă?"
+  },
+  {
+    "answers": [
+      [
+        "când conduceţi efectiv autovehiculul pe drumurile publice;",
+        false
+      ],
+      [
+        "când autovehiculul este oprit pe partea carosabilă;",
+        false
+      ],
+      [
+        "atât în timpul conducerii efective, cât şi atunci când autovehiculul este oprit.",
+        true
+      ]
+    ],
+    "question": "Când se aplică regulile conduitei preventive?"
+  },
+  {
+    "answers": [
+      [
+        "să arunce din vehicul obiecte, substanţe sau alte bunuri;",
+        true
+      ],
+      [
+        "să deschidă uşile, dacă vehiculul este oprit sau staţionat pe partea carosabilă;",
+        false
+      ],
+      [
+        "să folosească instalaţia de sonorizare cu care este echipat autoturismul.",
+        false
+      ]
+    ],
+    "question": " Conducătorului auto i se interzice:"
+  },
+  {
+    "answers": [
+      [
+        "penal;",
+        true
+      ],
+      [
+        "contravenţional;",
+        false
+      ],
+      [
+        "amendă contravenţională şi reţinerea permisului de conducere.",
+        false
+      ]
+    ],
+    "question": "Cum se pedepseşte conducerea pe drumurile publice a unui autovehicul din categoria C, de către o persoană al cărei permis este valabil pentru categoria B?"
+  },
+  {
+    "answers": [
+      [
+        "da, dacă obiectele depăşesc lăţimea autovehiculului.",
+        false
+      ],
+      [
+        "nu;",
+        true
+      ],
+      [
+        "da, dacă extremitatea obiectelor este semnalizată cu un steag roşu;",
+        false
+      ]
+    ],
+    "question": "Conducătorul unui autoturism poate transporta obiecte al căror gabarit depăşeşte, împreună cu încărcătura, dimensiunile acestuia?"
+  },
+  {
+    "answers": [
+      [
+        "posibilitatea conducerii relaxate, cu capul sprijinit de aceasta.",
+        false
+      ],
+      [
+        "protecţia suplimentară a persoanelor în cazul unui impact puternic al autovehiculului;",
+        true
+      ],
+      [
+        "amortizarea rapidă a trepidaţiilor datorate denivelărilor existente pe drumul public;",
+        false
+      ]
+    ],
+    "question": "Perna de aer (AIRBAG-ul) asigură:"
+  },
+  {
+    "answers": [
+      [
+        "„Drum cu prioritate”.",
+        false
+      ],
+      [
+        "„Prioritate faţă de circulaţia din sens invers”;",
+        true
+      ],
+      [
+        "„Prioritate pentru circulaţia din sens invers”;",
+        false
+      ]
+    ],
+    "question": "La întâlnirea cărui indicator conducătorul auto nu are prioritate de trecere?"
+  },
+  {
+    "answers": [
+      [
+        "autovehiculele poliţiei şi cele care execută virajul la stânga.",
+        false
+      ],
+      [
+        "autovehiculele care virează la stânga;",
+        false
+      ],
+      [
+        "niciun vehicul, cu excepţia celor destinate stingerii incendiilor, ale ambulanţei şi ale poliţiei, când se deplasează în acţiuni de intervenţie sau în misiuni care impun urgenţă;",
+        true
+      ]
+    ],
+    "question": "Ce vehicule au voie să pătrundă în intersecţie la culoarea roşie a semaforului?"
+  },
+  {
+    "answers": [
+      [
+        "semnificaţia luminii semaforului.",
+        true
+      ],
+      [
+        "regula priorităţii de dreapta;",
+        false
+      ],
+      [
+        "semnificaţia indicatorului;",
+        false
+      ]
+    ],
+    "question": "În cazul în care, într-o intersecţie, lângă semaforul în stare de funcţionare este instalat indicatorul „Oprire“, sunteți obligat să respectaţi:"
+  },
+  {
+    "answers": [
+      [
+        "în localităţi, la apropierea de o trecere pentru pietoni.",
+        false
+      ],
+      [
+        " la trecerea pe lângă biciclişti;",
+        false
+      ],
+      [
+        "ori de câte ori este necesar, pentru evitarea unui pericol imediat;",
+        true
+      ]
+    ],
+    "question": "Avertizarea sonoră se foloseşte:"
+  },
+  {
+    "answers": [
+      [
+        " în intersecţiile dirijate doar cu indicatoare rutiere;",
+        false
+      ],
+      [
+        "pe sectorul de drum unde s-a format o coloană de autovehicule în aşteptare, dacă prin aceasta se intră pe sensul opus de circulaţie;",
+        true
+      ],
+      [
+        "atunci când cel depăşit este remorcat şi are puse în funcţiune luminile de avarie.",
+        false
+      ]
+    ],
+    "question": "Depăşirea vehiculelor pe drumurile publice este interzisă:"
+  },
+  {
+    "answers": [
+      [
+        "la întâlnirea indicatorului „Prioritate pentru circulaţia din sens invers“.",
+        false
+      ],
+      [
+        " la coborârea drumurilor în pantă;.",
+        false
+      ],
+      [
+        "când partea carosabilă este acoperită cu mâzgă;",
+        true
+      ]
+    ],
+    "question": "Sunteţi obligat să nu depăşiţi viteza de 50 km/h în afara localităţilor, în următoarele situaţii:\n"
+  },
+  {
+    "answers": [
+      [
+        "nu;",
+        true
+      ],
+      [
+        "acest aspect nu este stabilit legal.",
+        false
+      ],
+      [
+        "da;",
+        false
+      ]
+    ],
+    "question": "Este permisă deţinerea, montarea sau folosirea la autovehicule a sistemelor care perturbă buna funcţionare a dispozitivelor de supraveghere a traficului?"
+  },
+  {
+    "answers": [
+      [
+        "la întâlnirea pietonilor aflaţi pe sensul de mers opus.",
+        false
+      ],
+      [
+        "la întâlnirea indicatorului „Drum cu prioritate“;",
+        true
+      ],
+      [
+        "într-o intersecţie nedirijată, atunci când pătrundeţi pe un drum naţional, venind de pe un drum judeţean;",
+        false
+      ]
+    ],
+    "question": "În ce situaţii sunteţi obligat să acordaţi prioritate de trecere?"
+  }
+
+]

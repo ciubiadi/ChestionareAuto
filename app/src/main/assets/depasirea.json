@@ -1,0 +1,462 @@
+[
+  {
+    "answers": [
+      [
+        "la mai puțin de 150 m de trecerile la nivel cu calea ferată",
+        false
+      ],
+      [
+        "pe drumurile cu o singură bandă de circulație pe sens",
+        false
+      ],
+      [
+        "în zona de acțiune a indicatorului „Depășirea interzisă",
+        true
+      ]
+    ],
+    "question": "În care dintre următoarele situații vă este interzis să efectuați depășirea?"
+  },
+  {
+    "answers": [
+      [
+        "bicicliștii pot fi depășiți fără restricții",
+        false
+      ],
+      [
+        "nu, pentru că din cauza circulației din sens opus nu se poate păstra o distanță laterală corespunzătoare",
+        true
+      ],
+      [
+        "da, dacă prin claxonare bicicliștii sunt determinați să se angajeze cât mai spre dreapta",
+        false
+      ]
+    ],
+    "question": "Vă este permis să depășiți bicicliștii?"
+  },
+  {
+    "answers": [
+      [
+        "nu, deoarece urmează un drum în lucru",
+        false
+      ],
+      [
+        "da, legea nu interzice",
+        true
+      ],
+      [
+        "nu, deoarece drumul se îngustează",
+        false
+      ]
+    ],
+    "question": "Puteți executa depășirea în această situație?"
+  },
+  {
+    "answers": [
+      [
+        "puteți depăși numai după ce pietonii și bicicliștii v-au făcut semn în acest sens,,
+        false
+      ],
+      [
+        "bicicliștii și pietonii pot fi depășiți numai dacă distanța laterală este de 3 m",
+        false
+      ],
+      [
+        "respectați prevederile legale",
+        true
+      ]
+    ],
+    "question": "Ce trebuie să aveți în vedere atunci când intenționați să depășiți atât bicicliști, cât și grupuri de pietoni care se deplasează pe carosabil?"
+  },
+  {
+    "answers": [
+      [
+        "da, dacă intersecția este dirijată",
+        true
+      ],
+      [
+        "nu",
+        false
+      ],
+      [
+        "da, dar numai a bicicletelor și a mopedelor",
+        false
+      ]
+    ],
+    "question": "Este permisă depășirea vehiculelor în intersecții?"
+  },
+  {
+    "answers": [
+      [
+        "da, dacă funcționează lumina intermitentă de culoare albă",
+        false
+      ],
+      [
+        "da, deoarece căruța se deplasează foarte încet",
+        false
+      ],
+      [
+        "nu, întrucât depășirea este interzisă în această situație",
+        true
+      ]
+    ],
+    "question": "Puteți efectua depășirea în situația dată?"
+  },
+  {
+    "answers": [
+      [
+        "la trecerile pentru pietoni prevăzute cu indicatoare și marcaje",
+        true
+      ],
+      [
+        "la o distanță mai mică de 50 m de stația de tramvai, când acesta este oprit",
+        false
+      ],
+      [
+        "la întâlnirea indicatorului „Circulație în ambele sensuri“",
+        false
+      ]
+    ],
+    "question": "În care dintre situațiile prezentate este interzisă depășirea vehiculelor pe drumurile publice?"
+  },
+  {
+    "answers": [
+      [
+        "da, deoarece din sens opus nu circulă niciun vehicul",
+        false
+      ],
+      [
+        "nu, deoarece motocicleta depășește autocamionul",
+        true
+      ],
+      [
+        "da, deoarece motocicleta nu trece peste axul drumului",
+        false
+      ]
+    ],
+    "question": "Conduceți autoturismul albastru. V-ați angajat corect în depășirea motocicletei?"
+  },
+  {
+    "answers": [
+      [
+        "în curbe, unde vizibilitatea este redusă sub 50 m",
+        true
+      ],
+      [
+        "la mai puțin de 50 m de o intersecție",
+        false
+      ],
+      [
+        "în zona de acțiune a indicatorului „Alte pericole”",
+        false
+      ]
+    ],
+    "question": "În care dintre situațiile de mai jos este interzisă depășirea vehiculelor?"
+  },
+  {
+    "answers": [
+      [
+        "atunci când vehiculul ce urmează a fi depășit rulează cu viteza admisă de lege",
+        false
+      ],
+      [
+        "în orice locuri și situații în care vizibilitatea nu permite executarea manevrei",
+        true
+      ],
+      [
+        "atunci când traficul rutier este aglomerat",
+        false
+      ]
+    ],
+    "question": "Depășirea nu este permisă:"
+  },
+  {
+    "answers": [
+      [
+        "pe oricare parte",
+        false
+      ],
+      [
+        "pe partea stângă",
+        false
+      ],
+      [
+        "pe partea dreaptă",
+        true
+      ]
+    ],
+    "question": "Un tramvai aflat în mers poate fi depășit de regulă:"
+  },
+  {
+    "answers": [
+      [
+        "da, atunci când între șina din dreapta și bordură nu există spațiu suficient pentru depășire",
+        true
+      ],
+      [
+        "nu",
+        false
+      ],
+      [
+        "da, în stațiile fără refugiu, pentru protejarea călătorilor care urcă sau coboară",
+        false
+      ]
+    ],
+    "question": "Tramvaiul poate fi depășit pe partea stângă?"
+  },
+  {
+    "answers": [
+      [
+        "la mai puțin de 50 m de trecerile la nivel cu calea ferată",
+        true
+      ],
+      [
+        "în zona de acțiune a indicatorului „Depășirea autovehiculelor, cu excepția motocicletelor fără ataș, interzisă“",
+        false
+      ],
+      [
+        "pe trecerile pentru pietoni, semnalizate cu indicator sau cu marcaj",
+        true
+      ]
+    ],
+    "question": "În care dintre situații este interzisă depășirea unui moped?"
+  },
+  {
+    "answers": [
+      [
+        "nu, în acest caz depășirea este interzisă",
+        false
+      ],
+      [
+        "da, numai dacă lățimea drumului public este mai mare de 6 m",
+        false
+      ],
+      [
+        "da",
+        true
+      ]
+    ],
+    "question": "În timp ce conduceți un autoturism, aveți voie să efectuați manevra de depășire a unui autobuz oprit în stație pentru urcarea și coborârea călătorilor?"
+  },
+  {
+    "answers": [
+      [
+        "da, numai în cazul în care depășirea se face pe o stradă semnalizată cu indicatorul „Drum fără ieșire",
+        false
+      ],
+      [
+        "da, în cazul autovehiculului care intenționează să vireze spre stânga, și în cazul tramvaiului",
+        true
+      ],
+      [
+        "nu",
+        false
+      ]
+    ],
+    "question": "Există vreo excepție de la regula depășirii pe partea stângă?"
+  },
+  {
+    "answers": [
+      [
+        "da, deoarece din sens opus nu se apropie niciun vehicul",
+        false
+      ],
+      [
+        "da, legea nu interzice",
+        false
+      ],
+      [
+        "nu, deoarece vă aflați în curbă",
+        true
+      ]
+    ],
+    "question": "Se poate efectua depășirea în situația dată?"
+  },
+  {
+    "answers": [
+      [
+        "da, numai dacă autobuzul are refugiu pentru pietoni",
+        false
+      ],
+      [
+        "nu, până la plecarea autobuzului din stație",
+        false
+      ],
+      [
+        "da, dacă vă asigurați și semnalizați",
+        true
+      ]
+    ],
+    "question": "Este regulamentar să depășiți autobuzul oprit în stație?"
+  },
+  {
+    "answers": [
+      [
+        "da, întrucât axul drumului nu este marcat cu o linie continuă",
+        false
+      ],
+      [
+        "nu, deoarece efectuați manevra pe un pod",
+        true
+      ],
+      [
+        "nu, deoarece podul nu are parapeți din beton",
+        false
+      ]
+    ],
+    "question": "Vă este permis să executați depășirea în situația prezentată?"
+  },
+  {
+    "answers": [
+      [
+        "ambii conducători",
+        true
+      ],
+      [
+        "conducătorul motocicletei",
+        false
+      ],
+      [
+        "conducătorul autoturismului",
+        false
+      ]
+    ],
+    "question": "Care dintre conducătorii autovehiculelor execută corect depășirea tramvaiului aflat în mers?"
+  },
+  {
+    "answers": [
+      [
+        "când un autobuz se află oprit în stație",
+        false
+      ],
+      [
+        "într-o intersecție nedirijată",
+        true
+      ],
+      [
+        "pe un drum în rampă, când vizibilitatea este peste 50 m",
+        false
+      ]
+    ],
+    "question": "În ce situații nu vă este permisă depășirea?"
+  },
+  {
+    "answers": [
+      [
+        " da, dacă v-ați asigurat din ambele sensuri că nu se apropie niciun tren",
+        false
+      ],
+      [
+        "da, deoarece căruța se deplasează cu o viteză foarte mică",
+        false
+      ],
+      [
+        "nu",
+        true
+      ]
+    ],
+    "question": "Puteți efectua depășirea în situația dată?"
+  },
+  {
+    "answers": [
+      [
+        "nu, deoarece indicatorul interzice depășirea autovehiculelor",
+        false
+      ],
+      [
+        "da, deoarece interzicerea depășirii se referă numai la autovehiculele destinate transportului de marfă",
+        true
+      ],
+      [
+        "nu, deoarece nu aveți vizibilitate suficientă",
+        false
+      ]
+    ],
+    "question": "Puteți efectua depășirea camionului?"
+  },
+  {
+    "answers": [
+      [
+        "din spate",
+        false
+      ],
+      [
+        "din față",
+        false
+      ],
+      [
+        "atât din față, cât și din spate",
+        true
+      ]
+    ],
+    "question": "Din ce direcție trebuie să se asigure un conducător auto, înainte de a trece la efectuarea unei depășiri?"
+  },
+  {
+    "answers": [
+      [
+        "da, manevra este regulamentară",
+        true
+      ],
+      [
+        "nu, deoarece treceți de axul drumului",
+        false
+      ],
+      [
+        "nu, deoarece marcajul orizontal interzice manevra",
+        false
+      ]
+    ],
+    "question": "Puteți depăși în această situație, dacă vă aflați la volanul autoturismului?"
+  },
+  {
+    "answers": [
+      [
+        "da, dacă cel care se apropie din sens opus a redus viteza de deplasare pentru a facilita depășirea",
+        false
+      ],
+      [
+        "da, dacă spațiul lateral este suficient",
+        false
+      ],
+      [
+        "nu, dacă cel care se apropie din sens opus este obligat să efectueze manevre de evitare a coliziunii",
+        true
+      ]
+    ],
+    "question": "Este permisă depășirea când din sens opus se apropie un alt vehicul?"
+  },
+  {
+    "answers": [
+      [
+        "pe partea stângă",
+        true
+      ],
+      [
+        "pe ambele părți",
+        false
+      ],
+      [
+        " pe partea dreaptă",
+        false
+      ]
+    ],
+    "question": "Cum se execută depășirea autoturismelor și a autocamioanelor pe un drum fără marcaje, pe care circulația se desfășoară în sens unic?"
+  },
+  {
+    "answers": [
+      [
+        "To stop at the last door.",
+        false
+      ],
+      [
+        "To stop behind it and to resume your journey only after the tram doors have been closed.",
+        true
+      ],
+      [
+        "To stop at a distance of 25 m from the tram.",
+        false
+      ]
+    ],
+    "question": "What should you do when you arrive behind a streetcar stopped in a station without refuge for pedestrians?"
+  }
+
+]
