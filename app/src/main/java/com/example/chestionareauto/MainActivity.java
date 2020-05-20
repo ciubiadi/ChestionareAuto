@@ -90,9 +90,12 @@ public class MainActivity extends AppCompatActivity {
         layoutGame.setVisibility(View.VISIBLE);
         btnGo.setVisibility(View.INVISIBLE);
         btnNextQuestion.setVisibility(View.INVISIBLE);
-        get_json();
+
         getQuestion();
         isSendAnswerButtonEnabled();
+
+        int tagjsoon = Integer.parseInt(view.getTag().toString());
+        get_json(tagjsoon);
 
         new CountDownTimer(1800100, 1000) {
 
@@ -152,15 +155,29 @@ public class MainActivity extends AppCompatActivity {
 
     }
 
-    public void get_json() {
+    public void get_json(int tag) {
         String json;
-
+        InputStream is = null;
         try {
 
             rand = new Random();
             int a = rand.nextInt(6);
-
-            InputStream is = getAssets().open("intrebari_raspunsuri2.json");
+            if(tag==0)
+            {
+                 is = getAssets().open("semnale_luminoase.json");
+            }
+            else if(tag==1)
+            {
+                 is = getAssets().open("depasirea.json");
+            }
+            else if(tag==2)
+            {
+                is = getAssets().open("distanta_intre_vehicule.json");
+            }
+            else if(tag==3)
+            {
+                is = getAssets().open("circulatia_autostrazi.json");
+            }
             int size = is.available();
             byte[] buffer = new byte[size];
             is.read(buffer);
