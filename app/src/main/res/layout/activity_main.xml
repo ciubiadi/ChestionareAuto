@@ -147,6 +147,21 @@
             app:layout_constraintStart_toStartOf="parent"
             app:layout_constraintTop_toTopOf="parent" />
 
+        <Button
+            android:id="@+id/buttonNextQuestion"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="128dp"
+            android:layout_marginLeft="128dp"
+            android:layout_marginTop="16dp"
+            android:layout_marginBottom="42dp"
+            android:onClick="goToNextQuestion"
+            android:padding="5sp"
+            android:text="Urmatoarea intrebare"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/btnC" />
+
     </androidx.constraintlayout.widget.ConstraintLayout>
 
     <Button

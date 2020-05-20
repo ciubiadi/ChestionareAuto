@@ -31,6 +31,8 @@ public class MainActivity extends AppCompatActivity {
     Button btnB;
     Button btnC;
     Button btnNext;
+    Button btnNextQuestion;
+    Button btnAnswerLater;
     TextView timerTextView;
     TextView questionTextView;
     TextView answersTextView;
@@ -66,47 +68,28 @@ public class MainActivity extends AppCompatActivity {
     }
 
     public void next(View view) throws JSONException {
+        btnNextQuestion.setVisibility(View.VISIBLE);
+        btnNext.setVisibility(View.INVISIBLE);
+        btnAnswerLater.setVisibility(View.INVISIBLE);
 
-        boolean answerStatus = true;
+        Log.i("info", "correct answers: " + correctAnswers[0]);
+        if (correctAnswers[0] == 1) {
+            btnA.setBackgroundResource(R.color.light_green);
+        } else { btnA.setBackgroundResource(R.color.light_red); }
 
-        //Comparam fiecare element din vectorul correctAnswers ( sablonul cu raspunsuri corecte pt intrebarea curenta ) cu fiecare element din buttinStatus ( raspunsurile alese de iutilizator )
+        if (correctAnswers[1] == 1) {
+            btnB.setBackgroundResource(R.color.light_green);
+        } else { btnB.setBackgroundResource(R.color.light_red); }
 
-        for( int i = 0; i < correctAnswers.length; i++)
-        {
-            if(correctAnswers[i] != buttonStatus[i])
-                answerStatus = false;
-        }
-        if(answerStatus == true)
-        {
-            Log.i("info", "Raspuns correct");
-            counterCorrectAnswers++;
-        }
-        else Log.i("info", "Raspuns gresit");
-
-//        answeredQuestionsCounter++;
-        questionCounter++;
-        Log.i("info", "Raspunsuri date: " + questionCounter);
-        Log.i("info", "Raspunsuri corecte: " + counterCorrectAnswers);
-
-        if (questionCounter == 27) {
-            layoutGame.setVisibility(View.INVISIBLE);
-            finishLayout.setVisibility(View.VISIBLE);
-            if (counterCorrectAnswers > 22) {
-                resultTextView.setText("Ai raspuns corect la " + counterCorrectAnswers + " intrebari. Felicitari, ai trecut!");
-            } else {
-                resultTextView.setText("Ai raspuns corect la " + counterCorrectAnswers + " intrebari. Din pacate, nu ai trecut. Mai incearca!");
-            }
-            return;
-        }
-        getQuestion();
-        resetAnswersButtonState();
-        answersTextView.setText(Integer.toString(questionCounter) + "/26 ");
-        isSendAnswerButtonEnabled();
+        if (correctAnswers[2] == 1) {
+            btnC.setBackgroundResource(R.color.light_green);
+        } else { btnC.setBackgroundResource(R.color.light_red); }
     }
 
     public void start(View view) throws JSONException {
         layoutGame.setVisibility(View.VISIBLE);
         btnGo.setVisibility(View.INVISIBLE);
+        btnNextQuestion.setVisibility(View.INVISIBLE);
         get_json();
         getQuestion();
         isSendAnswerButtonEnabled();
@@ -160,6 +143,8 @@ public class MainActivity extends AppCompatActivity {
         btnB = findViewById(R.id.btnB);
         btnC = findViewById(R.id.btnC);
         btnNext = findViewById(R.id.btnNext);
+        btnNextQuestion = findViewById(R.id.buttonNextQuestion);
+        btnAnswerLater = findViewById(R.id.btnAnswerLater);
 
         layoutGame.setVisibility(View.INVISIBLE);
         finishLayout.setVisibility(View.INVISIBLE);
@@ -247,6 +232,48 @@ public class MainActivity extends AppCompatActivity {
     public void answerLater(View view) throws JSONException {
         arrayOfQuestions.remove(arrayOfQuestions.size() - 1);
         getQuestion();
+    }
+
+    public void goToNextQuestion(View view) throws JSONException {
+        btnNext.setVisibility(View.VISIBLE);
+        btnAnswerLater.setVisibility(View.VISIBLE);
+        btnNextQuestion.setVisibility(View.INVISIBLE);
+
+        boolean answerStatus = true;
+
+        //Comparam fiecare element din vectorul correctAnswers ( sablonul cu raspunsuri corecte pt intrebarea curenta ) cu fiecare element din buttinStatus ( raspunsurile alese de iutilizator )
+
+        for( int i = 0; i < correctAnswers.length; i++)
+        {
+            if(correctAnswers[i] != buttonStatus[i])
+                answerStatus = false;
+        }
+        if(answerStatus == true)
+        {
+            Log.i("info", "Raspuns correct");
+            counterCorrectAnswers++;
+        }
+        else Log.i("info", "Raspuns gresit");
+
+//        answeredQuestionsCounter++;
+        questionCounter++;
+        Log.i("info", "Raspunsuri date: " + questionCounter);
+        Log.i("info", "Raspunsuri corecte: " + counterCorrectAnswers);
+
+        if (questionCounter == 27) {
+            layoutGame.setVisibility(View.INVISIBLE);
+            finishLayout.setVisibility(View.VISIBLE);
+            if (counterCorrectAnswers > 22) {
+                resultTextView.setText("Ai raspuns corect la " + counterCorrectAnswers + " intrebari. Felicitari, ai trecut!");
+            } else {
+                resultTextView.setText("Ai raspuns corect la " + counterCorrectAnswers + " intrebari. Din pacate, nu ai trecut. Mai incearca!");
+            }
+            return;
+        }
+        getQuestion();
+        resetAnswersButtonState();
+        answersTextView.setText(Integer.toString(questionCounter) + "/26 ");
+        isSendAnswerButtonEnabled();
     }
 
 }
