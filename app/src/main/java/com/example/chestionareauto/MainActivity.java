@@ -148,7 +148,7 @@ public class MainActivity extends AppCompatActivity {
 
         layoutGame.setVisibility(View.INVISIBLE);
         finishLayout.setVisibility(View.INVISIBLE);
-        btnGo.setVisibility(View.VISIBLE);
+        btnGo.setVisibility(View.INVISIBLE);
 
     }
 

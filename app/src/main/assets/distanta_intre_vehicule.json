@@ -1,0 +1,445 @@
+[
+    {
+        "answers": [
+        [
+            "Cand partea carosabila este acoperita cu mazga.", 
+            true
+        ], 
+        [
+            "La coborarea drumurilor in panta.", 
+            false
+        ], 
+        [
+            "La intalnirea inidcatorului "Prioritate pentru circulatia din sens invers".", 
+            false
+        ]
+        ], 
+        "question": "Sunteti obligat sa nu depasiti viteza de 50 km/h in afara localitatilor, in urmatoarele situatii:"
+    },
+	{
+        "answers": [
+        [
+            "60 km/h.", 
+            false
+        ], 
+        [
+            "50 km/h.", 
+            true
+        ], 
+        [
+            "40 km/h.", 
+            false
+        ]
+        ], 
+        "question": "Care este limita maxima de viteza in localitati?"
+    },
+	{
+        "answers": [
+        [
+            "Cand sunteti obosit si autovehiculul are sistemul de franare defect.", 
+            false
+        ], 
+        [
+            "La trecerea de nivel cu calea ferata curenta.", 
+            true
+        ], 
+        [
+            "Pe drumurile judetene si comunale.", 
+            false
+        ]
+        ], 
+        "question": "In care dintre urmatoarele situatii sunteti obligat sa circulati cu viteza redusa?"
+    }, 
+	{
+        "answers": [
+        [
+            "100 km/h.", 
+            true
+        ], 
+        [
+            "110 km/h.", 
+            false
+        ], 
+        [
+            "90 km/h.", 
+            false
+        ]
+        ], 
+        "question": "Care este limita maxima de viteza in afara localitatilor?"
+    }, 
+	{
+        "answers": [
+        [
+            "Cu o viteza mai mare decat cea legala.", 
+            false
+        ], 
+        [
+            "Cu o viteza de cel mult 80 km/h.", 
+            false
+        ], 
+        [
+            "Cu o viteza care sa nu depaseasca 30 km/h in localitati.", 
+            true
+        ]
+        ], 
+        "question": "Cu ce viteza veti efectua virajul spre stanga intr-o intersectie nedirijata?"
+    }, 
+	{
+        "answers": [
+        [
+            "70 km/h.", 
+            false
+        ], 
+        [
+            "50 km/h.", 
+            true
+        ], 
+        [
+            "90 km/h.", 
+            false
+        ]
+        ], 
+        "question": "Limita maxima de viteza cu care este permisa circulatia in afara localitatilor, in conditii de ceata este:"
+    }, 
+	{
+        "answers": [
+        [
+            "Da, daca circulati pe autostrada.", 
+            false
+        ], 
+        [
+            "Da, daca va asigurati ca din sens opus nu circula niciun alt vehicul.", 
+            false
+        ], 
+        [
+            "Nu.", 
+            true
+        ]
+        ], 
+        "question": "Puteti folosi o viteza mai mare decat cea legala pentru depasirea unui autovehicul?"
+    }, 
+	{
+        "answers": [
+        [
+            "130 km/h.", 
+            false
+        ], 
+        [
+            "100 km/h.", 
+            false
+        ], 
+        [
+            "110 km/h.", 
+            true
+        ]
+        ], 
+        "question": "Viteza maxima cu care pot sa conduca pe autostrada persoanele incepatoare este de:"
+    }, 
+	{
+        "answers": [
+        [
+            "Cand circulati pe prima banda;", 
+            false
+        ], 
+        [
+            "Cand un alt vehicul s-a angajat in depasirea dvs.", 
+            true
+        ], 
+        [
+            "In intersectii.", 
+            false
+        ]
+        ], 
+        "question": "Cand nu este permis sa mariti viteza de deplasare a autovehiculului?"
+    }, 
+	{
+        "answers": [
+        [
+            "10 km/h.", 
+            false
+        ], 
+        [
+            "20 km/h.", 
+            true
+        ], 
+        [
+            "25 km/h.", 
+            false
+        ]
+        ], 
+        "question": "Conducatorul care are mai putin de un an de practica va circula cu o viteza maxima admisa in afara localitatilor mai mica cu:"
+    }, 
+	{
+        "answers": [
+        [
+            "La trecerile pentru pietoni semaforizate.", 
+            false
+        ], 
+        [
+            "La circulatia pe poduri.", 
+            false
+        ], 
+        [
+            "Pe drumurile cu denivelari semnalizate ca atare.", 
+            true
+        ]
+        ], 
+        "question": "In care dintre urmatoarele situatii sunteti obligat sa circulati cu o viteza care sa nu depaseasca 30km/h in localitati?"
+    }, 
+	{
+        "answers": [
+        [
+            "cel mult 30 km/h.", 
+            false
+        ], 
+        [
+            "cel mult 20 km/h.", 
+            false
+        ], 
+        [
+            "cel mult 5 km/h.", 
+            true
+        ]
+        ], 
+        "question": "Intr-o zona pietonala, semnalizata ca atare, sunteti obligat sa circulati cu o viteza de:"
+    }, 
+	{
+        "answers": [
+        [
+            "Viteza minima obligatorie de 20 km/h.", 
+            false
+        ], 
+        [
+            "Viteza maxima de 20 km/h.", 
+            true
+        ], 
+        [
+            "Viteza maxima de 30 km/h.", 
+            false
+        ]
+        ], 
+        "question": "Intr-o zona rezidentiala puteti circula cu:"
+    }, 
+	{
+        "answers": [
+        [
+            "La trecerile pentru pietoni.", 
+            false
+        ], 
+        [
+            "La semnalul politistului de frontiera.", 
+            true
+        ], 
+        [
+            "Pe poduri.", 
+            false
+        ]
+        ], 
+        "question": "Viteza se va reduce obligatoriu:"
+    }, 
+	{
+        "answers": [
+        [
+            "5 km/h.", 
+            false
+        ], 
+        [
+            "10 km/h.", 
+            false
+        ], 
+        [
+            "20 km/h.", 
+            true
+        ]
+        ], 
+        "question": "Care este viteza maxima prevazuta de lege pentru circulatia in zonele rezidentiale?"
+    }, 
+	{
+        "answers": [
+        [
+            "Nu mai putin de 30 km/h.", 
+            true
+        ], 
+        [
+            "Nu mai putin de 40 km/h.", 
+            false
+        ], 
+        [
+            "Nu exista prevedere legala.", 
+            false
+        ]
+        ], 
+        "question": "Care este limita inferioara de viteza ce poate fi stabilita in interiorul localitatilor?"
+    }, 
+	{
+        "answers": [
+        [
+            "In perimetrul pietelor aglomerate.", 
+            false
+        ], 
+        [
+            "La intalnirea inidcatorului Oprire.", 
+            false
+        ], 
+        [
+            "Cand partea partea carosabila este acoperita cu polei sau gheata.", 
+            true
+        ]
+        ], 
+        "question": "Viteza va fi redusa pana la limita legala in urmatoarele situatii:"
+    }, 
+	{
+        "answers": [
+        [
+            "In zona de actiune a indicatorului de avertizare Copii, in intervalul orar 07.00-22.00", 
+            true
+        ], 
+        [
+            "Intr-o zona rezidentiala", 
+            false
+        ], 
+        [
+            "La schimbarea benzii de circulatie", 
+            false
+        ]
+        ], 
+        "question": "Sunteti obligat sa circulati cu o viteza care sa nu depaseasca 30 km/h in localitati, in urmatoarele situatii:"
+    }, 
+	{
+        "answers": [
+        [
+            "Sa circulati cu o viteza cel putin egala celei prescrise de indicatorul Viteza minima obligatorie", 
+            true
+        ], 
+        [
+            "Sa nu accelerati in intersectie", 
+            false
+        ], 
+        [
+            "Sa circulati cu o viteza inferioara celei inscrise in indicatorul Viteza minima obligatorie", 
+            false
+        ]
+        ], 
+        "question": "Ce obligatii aveti, in calitate de conducator auto?"
+    }, 
+	{
+        "answers": [
+        [
+            "110 km/h.", 
+            false
+        ], 
+        [
+            "100 km/h.", 
+            false
+        ], 
+        [
+            "130 km/h.", 
+            true
+        ]
+        ], 
+        "question": "Care este limita maxima de viteza pe autostrazi?"
+    }, 
+	{
+        "answers": [
+        [
+            "Circuli cu o viteza de peste 80 km/h", 
+            false
+        ], 
+        [
+            "Nu depasesti viteza de 80 km/h", 
+            true
+        ], 
+        [
+            "Nu depasesti viteza maxima admisa pe drumurile nationale", 
+            false
+        ]
+        ], 
+        "question": "Cum vei proceda la intalnirea indicatorului Limitare de viteza 80 km/h?"
+    }, 
+	{
+        "answers": [
+        [
+            "pe drumurile cu denivelări semnalizate ca atare", 
+            true
+        ], 
+        [
+            "în perimetrul pieţelor aglomerate", 
+            false
+        ], 
+        [
+            "în momentul în care eşti depăşit de un alt vehicul", 
+            false
+        ]
+        ], 
+        "question": "În ce situaţii viteza de deplasare se va reduce până la limita legală?"
+    }, 
+	{
+        "answers": [
+        [
+            "în curbele deosebit de periculoase, semnalizate ca atare;", 
+            true
+        ], 
+        [
+            "în curbele în care vizibilitatea este sub 50 m;", 
+            true
+        ], 
+        [
+            "în zonele în care este interzisă depăşirea.", 
+            false
+        ]
+        ], 
+        "question": "În care dintre următoarele situaţii sunteţi obligat să circulaţi cu o viteză care să nu depăşească 30 km/h în localităţi?"
+    }, 
+	{
+        "answers": [
+        [
+            "da, dacă se aprind luminile de poziţie sau de staţionare;", 
+            true
+        ], 
+        [
+            "nu, întrucât în toate cazurile se interzice pe timpul nopţii staţionarea pe partea carosabilă;", 
+            false
+        ], 
+        [
+            "da, dacă în afara luminilor de poziţie, prezenţa autovehiculului este semnalizată şi cu ajutorul triunghiurilor reflectorizante.", 
+            false
+        ]
+        ], 
+        "question": "Este permisă staţionarea autovehiculelor pe timpul nopţii pe partea carosabilă a unui drum comunal neiluminat?"
+    },  
+	{
+        "answers": [
+        [
+            "semnalizaţi revenirea şi efectuaţi manevra în condiţii de siguranţă;", 
+            true
+        ], 
+        [
+            "după reîncadrare, semnalizaţi cu luminile de avarie;", 
+            false
+        ], 
+        [
+            "claxonaţi şi vă angajaţi pe partea dreaptă, direct în faţa vehiculului depăşit.", 
+            false
+        ]
+        ], 
+        "question": "Cum trebuie să procedaţi atunci când intenţionaţi să finalizaţi o depăşire?"
+    }, 
+	{
+        "answers": [
+        [
+            "vehiculelor care circulă pe drumul judeţean, comunal sau local;", 
+            false
+        ], 
+        [
+            "vehiculelor care vin din dreapta;", 
+            false
+        ], 
+        [
+            "vehiculelor care circulă pe drumul naţional.", 
+            true
+        ]
+        ], 
+        "question": "La intersecţia nedirijată dintre un drum naţional şi unul judeţean, comunal sau local, prioritatea de trecere se acordă:"
+    }, 
+     
+]
