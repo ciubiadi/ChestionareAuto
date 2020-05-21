@@ -24,8 +24,10 @@ import java.util.Random;
 
 public class MainActivity extends AppCompatActivity {
 
+    CountDownTimer countDownTimer;
     ConstraintLayout layoutGame;
     ConstraintLayout finishLayout;
+    ConstraintLayout startLayout;
     Button btnGo;
     Button btnA;
     Button btnB;
@@ -43,9 +45,9 @@ public class MainActivity extends AppCompatActivity {
     TextView resultTextView;
     Random rand;
     int questionCounter = 1;
-//    int answeredQuestionsCounter = 0;
+    //    int answeredQuestionsCounter = 0;
     int[] buttonStatus = { 0, 0, 0 };
-   // ArrayList<Integer> correctAnswers = new ArrayList<Integer>();
+    // ArrayList<Integer> correctAnswers = new ArrayList<Integer>();
     int[] correctAnswers = { 0, 0, 0 };
     int counterCorrectAnswers = 0;
     boolean isSendAnswerEnabled = true;
@@ -56,18 +58,18 @@ public class MainActivity extends AppCompatActivity {
 
     public void chooseAnswer(View view) {
 
-       int tag = Integer.parseInt(view.getTag().toString());
-       if(buttonStatus[tag] == 0 ) {
+        int tag = Integer.parseInt(view.getTag().toString());
+        if(buttonStatus[tag] == 0 ) {
 
-           //Daca butonul nu a mai fost apasat
-           view.setBackgroundResource(R.color.light_blue);
-           buttonStatus[tag] = 1;
-       } else {
+            //Daca butonul nu a mai fost apasat
+            view.setBackgroundResource(R.color.light_blue);
+            buttonStatus[tag] = 1;
+        } else {
 
-           //Daca butonul a mai fost apasat, il "deselectam" si schimbam culoarea de fundal inapoi in gri
-           view.setBackgroundResource(R.color.light_gray);
-           buttonStatus[tag] = 0;
-       }
+            //Daca butonul a mai fost apasat, il "deselectam" si schimbam culoarea de fundal inapoi in gri
+            view.setBackgroundResource(R.color.light_gray);
+            buttonStatus[tag] = 0;
+        }
         isSendAnswerButtonEnabled();
     }
 
@@ -105,19 +107,26 @@ public class MainActivity extends AppCompatActivity {
         getQuestion();
         isSendAnswerButtonEnabled();
 
-        new CountDownTimer(1800100, 1000) {
+        if(countDownTimer!=null)
+        {
+            countDownTimer.cancel();
+            countDownTimer.start();
+        }else {
+            countDownTimer = new CountDownTimer(1800100, 1000) {
 
-            @Override
-            public void onTick(long millisUntilFinished) {
-                updateTimer((int) millisUntilFinished / 1000);
-            }
+                @Override
+                public void onTick(long millisUntilFinished) {
+                    updateTimer((int) millisUntilFinished / 1000);
+                }
 
-            @Override
-            public void onFinish() {
-                layoutGame.setVisibility(View.INVISIBLE);
-                finishLayout.setVisibility(View.VISIBLE);
-            }
-        }.start();
+                @Override
+                public void onFinish() {
+                    layoutGame.setVisibility(View.INVISIBLE);
+                    finishLayout.setVisibility(View.VISIBLE);
+                }
+            }.start();
+        }
+
 
         btnGo.setEnabled(false);
     }
@@ -138,6 +147,25 @@ public class MainActivity extends AppCompatActivity {
 //        getRandomQuestion();
     }
 
+    public void backToMenu(View view) {
+        finishLayout.setVisibility(View.INVISIBLE);
+        startLayout.setVisibility(View.VISIBLE);
+        btnSemnaleLuminoase.setVisibility(View.VISIBLE);
+        btnDepasirea.setVisibility(View.VISIBLE);
+        btnVitezaDistanta.setVisibility(View.VISIBLE);
+        btnCirculatiaAutostrazi.setVisibility(View.VISIBLE);
+        questionCounter = 1;
+//    int answeredQuestionsCounter = 0;
+
+        // ArrayList<Integer> correctAnswers = new ArrayList<Integer>();
+        arrayOfQuestions.clear();
+        resetAnswersButtonState();
+        questionCounter = 1;
+        answersTextView.setText(Integer.toString(questionCounter) + "/26 ");
+        counterCorrectAnswers = 0;
+        isSendAnswerEnabled = true;
+    }
+
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
@@ -145,6 +173,7 @@ public class MainActivity extends AppCompatActivity {
 
         layoutGame = findViewById(R.id.layoutGame);
         finishLayout = findViewById(R.id.finishLayout);
+        startLayout = findViewById(R.id.startLayout);
         btnGo = findViewById(R.id.btnGo);
         timerTextView = findViewById(R.id.timerTextView);
         questionTextView = findViewById(R.id.questionTextView);
@@ -176,11 +205,11 @@ public class MainActivity extends AppCompatActivity {
             int a = rand.nextInt(6);
             if(tag==0)
             {
-                 is = getAssets().open("semnale_luminoase.json");
+                is = getAssets().open("semnale_luminoase.json");
             }
             else if(tag==1)
             {
-                 is = getAssets().open("depasirea.json");
+                is = getAssets().open("depasirea.json");
             }
             else if(tag==2)
             {
@@ -219,7 +248,7 @@ public class MainActivity extends AppCompatActivity {
 
         for( int i = 0; i < 3; i++)
         {
-            // daca in json valoarea raspunsului e false, scriem valoarea 0 in vectorul correctAnswers, daca nu scriem valoarea 1 ( true )
+            // daca in json valoarea raspunsului e false, scriem valoarea 0 in vectorul correctAnswers, daca nu, scriem valoarea 1 ( true )
             if(obj.getJSONArray("answers").getJSONArray(i).get(1).toString() == "false") {
                 correctAnswers[i] = 0;
 //                    jsonArray = new JSONArray(json);

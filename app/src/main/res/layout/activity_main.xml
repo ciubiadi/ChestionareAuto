@@ -86,6 +86,7 @@
             app:layout_constraintStart_toStartOf="parent"
             app:layout_constraintTop_toBottomOf="@+id/btnVitezaDistanta"
             app:layout_constraintVertical_bias="0.181" />
+
     </androidx.constraintlayout.widget.ConstraintLayout>
 
     <androidx.constraintlayout.widget.ConstraintLayout
@@ -195,7 +196,7 @@
             android:layout_marginEnd="14dp"
             android:layout_marginRight="14dp"
             android:padding="5sp"
-            android:text="0/26"
+            android:text="1/26"
             android:textSize="30sp"
             app:layout_constraintEnd_toEndOf="parent"
             app:layout_constraintTop_toTopOf="parent" />
@@ -288,6 +289,23 @@
             app:layout_constraintStart_toStartOf="parent"
             app:layout_constraintTop_toTopOf="parent"
             tools:visibility="visible" />
+
+        <Button
+            android:id="@+id/btnBack"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="89dp"
+            android:layout_marginLeft="89dp"
+            android:layout_marginTop="88dp"
+            android:layout_marginEnd="64dp"
+            android:layout_marginRight="64dp"
+            android:layout_marginBottom="46dp"
+            android:onClick="backToMenu"
+            android:text="Intoarce-te la meniul principal"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/rezultatTextView" />
 
         <TextView
             android:id="@+id/rezultatTextView"
